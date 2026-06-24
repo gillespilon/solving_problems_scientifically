@@ -1,0 +1,437 @@
+% --- chapter The sandbox template ---
+
+\chapter{The technical sandbox}
+\label{ch:sandbox}
+
+This is a structural sandbox chapter designed to validate typography, math environments, glossary tracking, and custom list indexing. Use this file as a structural blueprint when spawning new chapters.
+
+\section{Create figures with captions}\label{sec:figures}
+\label{sec:create_figures_with_captions}
+
+\begin{figure}[H]
+    \begin{flushleft}
+    % LaTeX already knows to look in fot/, so just provide the filename
+    \includegraphics[scale=0.25]{matplotlib_anatomy_of_a_figure.png}
+    \caption{Anatomy of a matplotlib figure}
+    \label{fig:matplotlib_anatomy}
+\end{flushleft}
+\end{figure}
+
+\section{Create bold, italics, and underline}\label{sec:bold_italics_underline}
+Some of the \textbf{greatest} \textit{discoveries} in \gls{science} were made by \textbf{\textit{accident}}.
+
+\section{Create URLs}\label{sec:urls}
+Hyperlinks within the document can be easily added. For example, \hyperref[sec:figures]{see Create figures with captions} uses \verb|hyperref{}| to take you to a link based on a section or label. And \verb|~\ref{fig:labelname}| such as Figure~\ref{fig:matplotlib_anatomy} inserts the figure number as a link to that figure.
+
+Hyperlinks to external URLs can be easily added. For example, see \href{https://en.wikipedia.org/wiki/Latex}{Wikipedia \LaTeX}.
+
+\section{Create lists}\label{sec:lists}
+\subsection{Create unordered lists}\label{sec:unordered_list}
+\begin{itemize}
+    \item Illinois
+        \begin{itemize} \item Chicago \item Naperville \end{itemize}
+    \item Kentucky
+        \begin{itemize} \item Lexington \item Louisville \end{itemize}
+\end{itemize}
+
+\subsection{Create ordered lists}\label{sec:ordered_list}
+\begin{enumerate}
+    \item Cat
+        \begin{enumerate}
+            \item Persian
+            \item Siamese
+        \end{enumerate}
+    \item Dog
+        \begin{enumerate}
+            \item Aussiedoodle
+            \item Newfoundland
+        \end{enumerate}
+\end{enumerate}
+
+\section{Create tables}\label{sec:tables}
+
+\subsection{Create simple tables}\label{sec:simple_table}
+\begin{longtable}[l]{lcccccc}
+    \caption{Visigothi cum Romanis} \label{tab:visigothi_cum_romanis} \\
+    \toprule
+                 & I   & II  & III & IV  & V   & VI \\
+    \midrule
+    \endhead % Repeats the header row if the table splits across pages
+    Vandali      & 123 & 456 & 678 & 321 & 644 & 768  \\
+    Visigothorum & 021 & 229 & 678 & 123 & 456 & 678  \\
+    \bottomrule
+\end{longtable}
+
+% \begin{table}[H]
+% \begin{flushleft}
+% \begin{tabular}{lcccccc}
+% \toprule
+%              & I   & II  & III & IV  & V   & VI \\
+% \midrule
+% Vandali      & 123 & 456 & 678 & 321 & 644 & 768  \\
+% Visigothorum & 021 & 229 & 678 & 123 & 456 & 678 \\
+% \bottomrule
+% \end{tabular}
+% \label{tab:visigothi_cum_romanis}
+% \caption{Visigothi cum Romanis}
+% \end{flushleft}
+% \end{table}
+
+\subsection{Create multi row tables}\label{sec:multirow_table}
+\footnotesize % Applies the font size modifier smoothly to the longtable
+\begin{longtable}[l]{llll}
+    \caption{Comparison of capability indices} \label{tab:comparison_capability_indices} \\
+    \toprule
+                                               & \textbf{Process requirement}            & \textbf{Sampling}                        & \textbf{Comments} \\
+    \midrule
+    \endhead % Repeats this header on the next page if the table splits
+    \multirow[t]{4}{*}{$C_\text{pk}$}          & - Stable and predictable variation      & - Rational                               & - Possible cost to increasing $C_\text{pk}$ \\
+                                               & - Normal distribution                   & - Representative of process              & - Wide confidence interval \\
+                                               & - Need at least one specification limit & - Ensure same process conditions         & \\
+                                               &                                         & - No identifiable condition changes      & \\
+    \midrule % Optional: adds a visual anchor between index types
+    \multirow[t]{4}{*}{$P_\text{pk}$}          & - Stable and predictable variation      & - Random                                 & - Possible cost to increasing ppk \\
+                                               & - Normal distribution                   & - Sufficiently large, representative     & - Wide confidence interval \\
+                                               & - Need at least one specification limit & - Ensure same process conditions         & - Easiest formulae to explain \\
+                                               &                                         & - No identifiable condition changes      & \\
+    \midrule
+    \multirow[t]{4}{*}{$C_\text{pm}$}          & - Stable and predictable variation      & - Same as $C_\text{pk}$ or $P_\text{pk}$ & - $C_\text{pm}$ penalizes for being off-target \\
+                                               & - Normal distribution                   &                                          & - Wide confidence interval \\
+                                               & - Need at least one specification limit &                                          & - Most difficult formulae to explain \\
+                                               & - Need specification target             &                                          & \\
+    \bottomrule
+\end{longtable}
+% \begin{table}[H]
+% \footnotesize
+% \centering
+% \begin{tabular}{llll}
+% \toprule
+%                                            & \textbf{Process requirement}            & \textbf{Sampling}                        & \textbf{Comments} \\
+% \midrule
+% \multirow[t]{4}{*}{$C_\text{pk}$}          & - Stable and predictable variation      & - Rational                               & - Possible cost to increasing $C_\text{pk}$ \\
+%                                            & - Normal distribution                   & - Representative of process              & - Wide confidence interval \\
+%                                            & - Need at least one specification limit & - Ensure same process conditions         & \\
+%                                            &                                         & - No identifiable condition changes      & \\
+% \multirow[t]{4}{*}{$P_\text{pk}$}          & - Stable and predictable variation      & - Random                                 & - Possible cost to increasing ppk \\
+%                                            & - Normal distribution                   & - Sufficiently large, representative     & - Wide confidence interval \\
+%                                            & - Need at least one specification limit & - Ensure same process conditions         & - Easiest formulae to explain \\
+%                                            &                                         & - No identifiable condition changes      & \\
+% \multirow[t]{4}{*}{$C_\text{pm}$}          & - Stable and predictable variation      & - Same as $C_\text{pk}$ or $P_\text{pk}$ & - $C_\text{pm}$ penalizes for being off-target \\
+%                                            & - Normal distribution                   &                                          & - Wide confidence interval \\
+%                                            & - Need at least one specification limit &                                          & - Most difficult formulae to explain \\
+%                                            & - Need specification target             &                                          & \\
+% \bottomrule
+% \end{tabular}
+% \caption{Comparison of capability indices}
+% \label{tab:comparison_capability_indices}
+% \end{table}
+
+\section{Create mathematics}\label{sec:mathematics}
+
+\subsection{Create inline mathematics}\label{sec:inline_mathematics}
+Examples of inline mathematics $\frac{a}{b}$, followed by text and another inline equation $\lim_{x\to 0}\frac{\sin x}{x}$=1 and more text $\sum_{k=0}^\infty \frac{1}{2^k}=2$ and finally much more text to cover many lines of a paragraph.
+
+\subsection{Create display style mathematics}\label{sec:display_style_mathematics}
+Examples of mathematics on their own lines. All equations are flush-left to the page unless multilines, and thus aligned on a symbol with the longest equation flush-left. The equations numbers are flush-right.
+
+\begin{flalign}
+    \text{measured observation} = \text{true value} + \text{measurement system error}&&
+\end{flalign}
+\myequations{Measured observation}
+
+\begin{flalign}
+    \text{ICC} = \frac{\text{variance of the product values}}{\text{variance of the product observations}}&&
+\end{flalign}
+\myequations{Intraclass correlation coefficient}
+
+\begin{flalign}
+    \overline{X}  \pm \text{CI} & = \frac{\sum\limits_{i=1}^{n} X_i}{n} \pm t_{1- \alpha / 2 \, \text{,} \, n-1} \times \frac{s}{\sqrt{n}}&&
+\end{flalign}
+\myequations{Average $\pm$ confidence interval}
+
+\begin{flalign}
+    \text{distance to target} & = \text{specification target} - \text{location statistic} = T - \overline{X}&&
+\end{flalign}
+\myequations{Distance to target}
+
+\begin{flalign}
+    s \pm \text{CI} & = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}} \pm \left(\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{\alpha / 2}^2}},\sqrt{\frac{(n - 1)\,s^{2}}{\chi_{1 - {\alpha / 2}}^2}}\right)&&
+\end{flalign}
+\myequations{Standard deviation $\pm$ confidence interval}
+
+\begin{flalign}
+    \text{distance to nearest spec} = \frac{\text{nearest spec} - \text{location statistic}}{\text{dispersion statistic}}  = \frac{\text{min}\,(\overline{X} - \text{LSL}\,, \text{USL} - \overline{X})}{s} &&
+\end{flalign}
+\myequations{Distance to nearest specification}
+
+The confidence intervals are:
+
+\begin{flalign}
+    \text{Lower bound} = \hat{P}_{pk} - z_{1 - \alpha / 2} \sqrt{\frac{1}{\left(\frac{\text{toler}}{2}\right)^2 n} + \frac{\left(\hat{P}_{pk}\right)^2}{2 \nu}}&&
+\end{flalign}
+\myequations{$\hat{P}_{pk}$ lower bound}
+
+\begin{flalign}
+    \text{Upper bound} = \hat{P}_{pk} + z_{1- \alpha / 2} \sqrt{\frac{1}{\left(\frac{\text{toler}}{2}\right)^2 n} + \frac{\left(\hat{P}_{pk}\right)^2}{2 \nu}}&&
+\end{flalign}
+\myequations{$\hat{P}_{pk}$ upper bound}
+
+where:
+
+\begin{flalign*}
+    n                           & = \text{the number of observations in the sample}&& \\
+    \nu                         & = \text{the degrees of freedom $= n - 1$}&& \\
+    \chi_{\alpha \text{,}\nu}^2 & = \text{the $\alpha$ percentile of the chi-square distribution with $\nu$ degrees of freedom}&& \\
+    \text{toler}                & = \text{multiplier of the standard deviation tolerance (Minitab\textregistered\ uses 6 as the default value)}&& \\
+    z_{1 - \alpha / 2}          & = \text{the $1 - \alpha / 2$ percentile of the standard normal distribution}&& \\
+\end{flalign*}
+
+\begin{flalign}
+A=\begin{pmatrix}
+1 &0 &4 &-1 \\
+0 &1 &-3 &1 \\
+0 &0 &0 &1
+\end{pmatrix}&&
+\end{flalign}
+\myequations{Matrix p format}
+
+\begin{flalign}
+A = \begin{bmatrix}
+1 &0 &4 &-1\\
+0 &1 &-3 &1 \\
+0 &0 &0 &1
+\end{bmatrix}&&
+\end{flalign}
+\myequations{Matrix b format}
+
+\section{Creating greek letters}\label{sec:greek_letters}
+
+\subsection{Greek Unicode}\label{sec:greek_unicode}
+
+Greek letters can be inserted in mathematics and text using Unicode characters. In Neovim, the sequence is `ControlKey + v uhhhh` where `hhhh` is the Unicode.
+\begin{longtable}[l]{lcccc}
+    \caption{Greek Unicode} \label{tab:greek_unicode} \\
+    \toprule
+    letter  & code & miniscule & code & majuscule \\
+    \midrule
+    \endhead % Repeats the column headers if the alphabet splits across pages
+    alpha   & 03b1 & α & 0391 & Α \\
+    beta    & 03b2 & β & 0392 & Β \\
+    gamma   & 03b3 & γ & 0393 & Γ \\
+    delta   & 03b4 & δ & 0394 & Δ \\
+    epsilon & 03b5 & ε & 0395 & Ε \\
+    zeta    & 03b6 & ζ & 0396 & Ζ \\
+    eta     & 03b7 & η & 0397 & Η \\
+    theta   & 03b8 & θ & 0398 & Θ \\
+    iota    & 03b9 & ι & 0399 & Ι \\
+    kappa   & 03ba & κ & 039a & Κ \\
+    lambda  & 03bb & λ & 039b & Λ \\
+    mu      & 03bc & μ & 039c & Μ \\
+    nu      & 03bd & ν & 039d & Ν \\
+    xi      & 03be & ξ & 039e & Ξ \\
+    omicron &      & o &      & O \\
+    pi      & 03c0 & π & 03ao & Π \\
+    rho     & 03c1 & ρ & 03a1 & Ρ \\
+    sigma   & 03c3 & σ & 03a3 & Σ \\
+    tau     & 03c4 & τ & 03a4 & Τ \\
+    upsilon & 03c5 & υ & 03a5 & Υ \\
+    phi     & 03c6 & φ & 03a6 & Φ \\
+    chi     & 03c7 & χ & 03a7 & Χ \\
+    psi     & 03c8 & ψ & 03a8 & Ψ \\
+    omega   & 03c9 & ω & 03a9 & Ω \\
+    \bottomrule
+\end{longtable}
+% \begin{table}[H]
+% \begin{flushleft}
+% \begin{tabular}{lcccc}
+% \toprule
+% letter & code & miniscule & code & majuscule \\
+% \midrule
+% alpha   & 03b1 & α & 0391 & Α \\
+% beta    & 03b2 & β & 0392 & Β \\
+% gamma   & 03b3 & γ & 0393 & Γ \\
+% delta   & 03b4 & δ & 0394 & Δ \\
+% epsilon & 03b5 & ε & 0395 & Ε \\
+% zeta    & 03b6 & ζ & 0396 & Ζ \\
+% eta     & 03b7 & η & 0397 & Η \\
+% theta   & 03b8 & θ & 0398 & Θ \\
+% iota    & 03b9 & ι & 0399 & Ι \\
+% kappa   & 03ba & κ & 039a & Κ \\
+% lambda  & 03bb & λ & 039b & Λ \\
+% mu      & 03bc & μ & 039c & Μ \\
+% nu      & 03bd & ν & 039d & Ν \\
+% xi      & 03be & ξ & 039e & Ξ \\
+% omicron &      & o &      & O \\
+% pi      & 03c0 & π & 03ao & Π \\
+% rho     & 03c1 & ρ & 03a1 & Ρ \\
+% sigma   & 03c3 & σ & 03a3 & Σ \\
+% tau     & 03c4 & τ & 03a4 & Τ \\
+% upsilon & 03c5 & υ & 03a5 & Υ \\
+% phi     & 03c6 & φ & 03a6 & Φ \\
+% chi     & 03c7 & χ & 03a7 & Χ \\
+% psi     & 03c8 & ψ & 03a8 & Ψ \\
+% omega   & 03c9 & ω & 03a9 & Ω \\
+% \bottomrule
+% \end{tabular}
+% \label{tab:greek_unicode}
+% \caption{Greek Unicode}
+% \end{flushleft}
+% \end{table}
+
+\subsection{Greek mathematics}\label{sec:greek_mathematics}
+
+Greek letters can be inserted in mathematics. These are naturally italicized.
+\begin{longtable}[l]{lcccc}
+    \caption{Greek mathematics} \label{tab:greek_mathematics} \\
+    \toprule
+    letter  & code & miniscule & code & majuscule \\
+    \midrule
+    \endhead % Repeats the column headers if the alphabet splits across pages
+    alpha   & \verb| \alpha |   & $\alpha$   & \verb| A |       & $A$ \\
+    beta    & \verb| \beta |    & $\beta$    & \verb| B |       & $B$ \\
+    gamma   & \verb| \gamma |   & $\gamma$   & \verb| \Gamma |  & $\Gamma$ \\
+    delta   & \verb| \delta |   & $\delta$   & \verb| \Delta |  & $\Delta$ \\
+    epsilon & \verb| \epsilon | & $\epsilon$ & \verb| E |       & $E$ \\
+    zeta    & \verb| \zeta |    & $\zeta$    & \verb| Z |       & $Z$ \\
+    eta     & \verb| \eta |     & $\eta$     & \verb| H |       & $H$ \\
+    theta   & \verb| \theta |   & $\theta$   & \verb| \Theta |  & $\Theta$ \\
+    iota    & \verb| \iota |    & $\iota$    & \verb| I |       & $I$ \\
+    kappa   & \verb| \kappa |   & $\kappa$   & \verb| K |       & $K$ \\
+    lambda  & \verb| \lambda |  & $\lambda$  & \verb| \Lambda | & $\Lambda$ \\
+    mu      & \verb| \mu |      & $\mu$      & \verb| M |       & $M$ \\
+    nu      & \verb| \nu |      & $\nu$      & \verb| N |       & $N$ \\
+    xi      & \verb| \xi |      & $\xi$      & \verb| \Xi |     & $\Xi$ \\
+    omicron & \verb| o |        & $o$        & \verb| O |       & $O$ \\
+    pi      & \verb| \pi |      & $\pi$      & \verb| \Pi |     & $\Pi$ \\
+    rho     & \verb| \rho |     & $\rho$     & \verb| P |       & $P$ \\
+    sigma   & \verb| \sigma |   & $\sigma$   & \verb| \Sigma |  & $\Sigma$ \\
+    tau     & \verb| \tau |     & $\tau$     & \verb| T |       & $T$ \\
+    upsilon & \verb| \upsilon | & $\upsilon$ & \verb| \Upsilon |& $\Upsilon$ \\
+    phi     & \verb| \phi |     & $\phi$     & \verb| \Phi |    & $\Phi$ \\
+    chi     & \verb| \chi |     & $\chi$     & \verb| X |       & $X$ \\
+    psi     & \verb| \psi |     & $\psi$     & \verb| \Psi |    & $\Psi$ \\
+    omega   & \verb| \omega |   & $\omega$   & \verb| \Omega |  & $\Omega$ \\
+    \bottomrule
+\end{longtable}
+% \begin{table}[H]
+% \begin{flushleft}
+% \begin{tabular}{lcccc}
+% \toprule
+% letter & code & miniscule & code & majuscule \\
+% \midrule
+% alpha   & \$\textbackslash alpha\$   & $\alpha$   & \$A\$                      & $A$ \\
+% beta    & \$\textbackslash beta\$    & $\beta$    & \$B\$                      & $B$ \\
+% gamma   & \$\textbackslash gamma\$   & $\gamma$   & \$\textbackslash Gamma\$   & $\Gamma$ \\
+% delta   & \$\textbackslash delta\$   & $\delta$   & \$\textbackslash Delta\$   & $\Delta$ \\
+% epsilon & \$\textbackslash epsilon\$ & $\epsilon$ & \$E\$                      & $E$ \\
+% zeta    & \$\textbackslash zeta\$    & $\zeta$    & \$Z\$                      & $Z$ \\
+% eta     & \$\textbackslash eta\$     & $\eta$     & \$H\$                      & $H$ \\
+% theta   & \$\textbackslash theta\$   & $\theta$   & \$\textbackslash Theta\$   & $\Theta$ \\
+% iota    & \$\textbackslash iota\$    & $\iota$    & \$I\$                      & $I$ \\
+% kappa   & \$\textbackslash kappa\$   & $\kappa$   & \$K\$                      & $K$ \\
+% lambda  & \$\textbackslash lambda\$  & $\lambda$  & \$\textbackslash Lambda\$  & $\Lambda$ \\
+% mu      & \$\textbackslash mu\$      & $\mu$      & \$M\$                      & $M$ \\
+% nu      & \$\textbackslash nu\$      & $\nu$      & \$N\$                      & $N$ \\
+% xi      & \$\textbackslash xi\$      & $\xi$      & \$\textbackslash Xi\$      & $\Xi$ \\
+% omicron & \$o\$                      & $o$        & \$O\$                      & $O$ \\
+% pi      & \$\textbackslash pi\$      & $\pi$      & \$\textbackslash Pi\$      & $\Pi$ \\
+% rho     & \$\textbackslash rho\$     & $\rho$     & \$P\$                      & $P$ \\
+% sigma   & \$\textbackslash sigma\$   & $\sigma$   & \$\textbackslash Sigma\$   & $\Sigma$ \\
+% tau     & \$\textbackslash tau\$     & $\tau$     & \$T\$                      & $T$ \\
+% upsilon & \$\textbackslash upsilon\$ & $\upsilon$ & \$\textbackslash Upsilon\$ & $\Upsilon$ \\
+% phi     & \$\textbackslash phi\$     & $\phi$     & \$\textbackslash Phi\$     & $\Phi$ \\
+% chi     & \$\textbackslash chi\$     & $\chi$     & \$X\$                      & $X$ \\
+% psi     & \$\textbackslash psi\$     & $\psi$     & \$\textbackslash Psi\$     & $\Psi$ \\
+% omega   & \$\textbackslash omega\$   & $\omega$   & \$\textbackslash Omega\$   & $\Omega$ \\
+% \bottomrule
+% \end{tabular}
+% \label{tab:greek_mathematics}
+% \caption{Greek mathematics}
+% \end{flushleft}
+% \end{table}
+
+\subsection{Greek text}\label{sec:greek_text}
+
+Greek letters can be inserted as text.
+\begin{longtable}[l]{lcccc}
+    \caption{Greek text} \label{tab:greek_text} \\
+    \toprule
+    letter      & code & miniscule & code & majuscule \\
+    \midrule
+    \endhead % Repeats the column headers if the alphabet splits across pages
+    alpha       & \verb|\textalpha|   & \textalpha   & \verb|\textAlpha|   & \textAlpha \\
+    beta        & \verb|\textbeta|    & \textbeta    & \verb|\textBeta|    & \textBeta \\
+    gamma       & \verb|\textgamma|   & \textgamma   & \verb|\textGamma|   & \textGamma \\
+    delta       & \verb|\textdelta|   & \textdelta   & \verb|\textDelta|   & \textDelta \\
+    epsilon     & \verb|\textepsilon| & \textepsilon & \verb|\textEpsilon| & \textEpsilon \\
+    zeta        & \verb|\textzeta|    & \textzeta    & \verb|\textZeta|    & \textZeta \\
+    eta         & \verb|\texteta|     & \texteta     & \verb|\textEta|     & \textEta \\
+    theta       & \verb|\texttheta|   & \texttheta   & \verb|\textTheta|   & \textTheta \\
+    iota        & \verb|\textiota|    & \textiota    & \verb|\textIota|    & \textIota \\
+    kappa       & \verb|\textkappa|   & \textkappa   & \verb|\textKappa|   & \textKappa \\
+    lambda      & \verb|\textlambda|  & \textlambda  & \verb|\textLambda|  & \textLambda \\
+    mu          & \verb|\textmu|      & \textmu      & \verb|\textMu|      & \textMu \\
+    nu          & \verb|\textnu|      & \textnu      & \verb|\textNu|      & \textNu \\
+    xi          & \verb|\textxi|      & \textxi      & \verb|\textXi|      & \textXi \\
+    omicrdon    & \verb|o|            & o            & \verb|O|            & O \\
+    pi          & \verb|\textpi|      & \textpi      & \verb|\textPi|      & \textPi \\
+    rho         & \verb|\textrho|     & \textrho     & \verb|\textRho|     & \textRho \\
+    sigma       & \verb|\textsigma|   & \textsigma   & \verb|\textSigma|   & \textSigma \\
+    tau         & \verb|\texttau|     & \texttau     & \verb|\textTau|     & \textTau \\
+    upsilon     & \verb|\textupsilon| & \textupsilon & \verb|\textUpsilon| & \textUpsilon \\
+    phi         & \verb|\textphi|     & \textphi     & \verb|\textPhi|     & \textPhi \\
+    chi         & \verb|\textchi|     & \textchi     & \verb|\textChi|     & \textChi \\
+    psi         & \verb|\textpsi|     & \textpsi     & \verb|\textPsi|     & \textPsi \\
+    omega       & \verb|\textomega|   & \textomega   & \verb|\textOmega|   & \textOmega \\
+    \bottomrule
+\end{longtable}
+% \begin{table}[H]
+% \begin{flushleft}
+% \begin{tabular}{lcccc}
+% \toprule
+% letter                 & code                       & miniscule    & code                       & majuscule \\
+% \midrule
+% alpha                  & \textbackslash textalpha   & \textalpha   & \textbackslash textAlpha   & \textAlpha \\
+% beta                   & \textbackslash textbeta    & \textbeta    & \textbackslash textBeta    & \textBeta \\
+% gamma                  & \textbackslash textgamma   & \textgamma   & \textbackslash textGamma   & \textGamma \\
+% delta                  & \textbackslash textdelta   & \textdelta   & \textbackslash textDelta   & \textDelta \\
+% epsilon                & \textbackslash textepsilon & \textepsilon & \textbackslash textEpsilon & \textEpsilon \\
+% zeta                   & \textbackslash textzeta    & \textzeta    & \textbackslash textZeta    & \textZeta \\
+% eta                    & \textbackslash texteta     & \texteta     & \textbackslash textEta     & \textEta \\
+% theta                  & \textbackslash texttheta   & \texttheta   & \textbackslash textTheta   & \textTheta \\
+% iota                   & \textbackslash textiota    & \textiota    & \textbackslash textIota    & \textIota \\
+% kappa                  & \textbackslash textkappa   & \textkappa   & \textbackslash textKappa   & \textKappa \\
+% lambda                 & \textbackslash textlambda  & \textlambda  & \textbackslash textLambda  & \textLambda \\
+% mu                     & \textbackslash textmu      & \textmu      & \textbackslash textMu      & \textMu \\
+% nu                     & \textbackslash textnu      & \textnu      & \textbackslash textNu      & \textNu \\
+% xi                     & \textbackslash textxi      & \textxi      & \textbackslash textXi      & \textXi \\
+% omicrdon               & o                          & o            & O                          & O \\
+% pi                     & \textbackslash textpi      & \textpi      & \textbackslash textPi      & \textPi \\
+% rho                    & \textbackslash textrho     & \textrho     & \textbackslash textRho     & \textRho \\
+% sigma                  & \textbackslash textsigma   & \textsigma   & \textbackslash textSigma   & \textSigma \\
+% tau                    & \textbackslash texttau     & \texttau     & \textbackslash textTau     & \textTau \\
+% upsilon                & \textbackslash textupsilon & \textupsilon & \textbackslash textUpsilon & \textUpsilon \\
+% phi                    & \textbackslash textphi     & \textphi     & \textbackslash textPhi     & \textPhi \\
+% chi                    & \textbackslash textchi     & \textchi     & \textbackslash textChi     & \textChi \\
+% psi                    & \textbackslash textpsi     & \textpsi     & \textbackslash textPsi     & \textPsi \\
+% omega                  & \textbackslash textomega   & \textomega   & \textbackslash textOmega   & \textOmega \\
+% \bottomrule
+% \end{tabular}
+% \label{tab:greek_text}
+% \caption{Greek text}
+% \end{flushleft}
+% \end{table}
+
+\section{Inserting citations}\label{sec:citations}
+We also anchor technical references using our external database system~\cite{wheeler1989}. Here is a single citation without prenote and postnote. There is a definitive book on MSA~\cite{wheeler2006}. Here is a single citation with prenote only. There is a definitive book on SPC~\cite{wheeler2006}. Here is a single citation with postnote only. $C_\text{pm}$ is a complex subject~\cite[][1-10]{chan1988}.
+
+\section{Inserting glossary terms}\label{sec:glossary_terms}
+
+For glossary terms use \gls{endog}, \glspl{endog}, \gls{exog}, \glspl{exog}, \gls{machinelearning}, and \gls{seborrheickeratosis}.
+
+\section{Inserting index terms}\label{sec:index_terms}
+
+The development of advanced \index{automation}automation frameworks requires a tight integration between custom infrastructure and robust software engineering. When compiling highly optimized modules, developers must pay close attention to \index{memory constraints}memory constraints.
+
+\section{Endnotes}
+The initial deployment of machine learning architectures required massive mainframe hardware systems.\endnote{See Smith (1982) for an architectural breakdown of early mainframe limitations.} This structural limitation heavily restricted real-time calculations.

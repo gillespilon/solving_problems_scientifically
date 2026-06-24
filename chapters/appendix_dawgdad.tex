@@ -1,0 +1,31 @@
+% --- Appendix dawgdad
+\chapter{Appendix---dawgdad}
+\label{app:dawgdad}
+
+\section{Install dawgdad}\label{sec:install_dawgdad}
+
+\href{https://github.com/gillespilon/dawgdad}{dawgdad} \cite{dawgdad} is a \Gls{python} package for statistical, graphical, and predictive analysis.
+
+dawgdad requires Python. Install a \Gls{python} distribution appropriate to your operating system (\nameref{app:python}).
+
+Install dawgdad following the instructions  at \href{https://github.com/gillespilon/dawgdad}{https://github.com/gillespilon/dawgdad}. dawgdad is compatible with the \href{https://www.python.org/downloads/}{latest Python distribution} from \href{https://www.python.org/}{Python.org}. Instructions on how to use dawgdad are provided in relevant sections of this document. Full documentation is available at \href{https://dawgdad.readthedocs.io/en/latest/}{https://dawgdad.readthedocs.io/en/latest/}.
+
+Run the following command in your shell:
+
+\begin{zshbox}{Installing dawgdad}
+pip install dawgdad
+\end{zshbox}
+
+If you prefer a different distribution, such as \href{https://www.anaconda.com/download}{Anaconda}, following the instruction as appropriate.
+
+\section{Using dawgdad in Python}\label{sec:using_dawdad_in_python}
+
+Here is a quick example of how to import and initialize the module:
+
+\begin{pycode}{Initializing the data framework}
+import dawgdad as dd
+
+# Load and analyze your dataset
+data = dd.load_analytics("performance_log.csv")
+print(data.summary())
+\end{pycode}

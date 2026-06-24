@@ -1,0 +1,1267 @@
+% Encoding: UTF-8
+@entry{twodimarray,
+name = {2d array},
+description = {Two-dimensional array. A NumPy array whose \textit{.shape} has length 2. Often represents a matrix.}
+}
+@entry{aad,
+name = {average absolute deviation},
+description = {The average absolute deviation (AAD) measure does not square the distance from the average, so it is less affected by extreme \glspl{observation} than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
+}
+@entry{anome,
+name = {analysis of main effects},
+description = {The analysis of main effects (ANOME) chart that compares the \gls{averagestatistic} of each level to the overall average},
+}
+@entry{anomr,
+name = {analysis of mean ranges},
+description = {The analysis of mean ranges (ANOMR) chart compares the average range of each level to the overall range},
+}
+@entry{cp,
+name = {process capability index two-sided (rational sample)},
+description = {The process capability index two-sided (rational sample) ($C_\text{p}$) compares the width of the process specification to the width of the process variation.},
+}
+@entry{cpk,
+name = {process capability index one-sided (rational sample)},
+description = {The process capability index one-sided (rational sample) ($C_\text{pk}$) calculates the distance from each specification limit to the \gls{averagestatistic}, compares them to the width of the process variation, and reports the smaller value.},
+}
+@entry{cpm,
+name = {process capability index loss function (random sample)},
+description = {The process capability index loss function (random sample) ($C_\text{pm}$) calculates process capability with respect to deviation from the \gls{averagestatistic} and deviation from the target.},
+}
+@entry{gui,
+name = {graphical user interface},
+plural = {graphical user interfaces},
+description = {A graphical user interface (GUI) is a visual interface that allows users to interact with a computer or other electronic device using icons, buttons, and menus. GUIs are interactive and replace text-based commands with user-friendly actions. The goal of a GUI is to make decision points easy for users to find, understand, and use.}
+}
+@entry{icc,
+name = {intraclass correlation coefficient},
+description = {The intraclass correlation coefficient (ICC) describes how strongly units in the same group resemble each other, with and without operators.}
+}
+@entry{iqr,
+name = {interquartile range},
+description = {The interquartile range (IQR) is the value of the 75\textsuperscript{th} percentile minus the value of the 25\textsuperscript{th} percentile. This \gls{dispersionstatistic} attempts to measure the variability of points near the centre.},
+}
+@entry{knn,
+name = {k-nearest neighbour},
+description = {The k-nearest neighbour (k-NN) is a non-parametric supervised learning method used in classification and prediction. The input consists of the k closest training examples in a \gls{dataset}. The output depends on whether k-NN is used for classification or prediction.}
+}
+@entry{mad,
+name = {median absolute deviation},
+description = {The median absolute deviation (MAD) is a variation of the \gls{aad} that is even less affected by extremes in the tail because the \glspl{datum} in the tails have less influence on the calculation of the median than they do on the \gls{averagestatistic}. $$\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$$},
+}
+@entry{mae,
+name = {mean absolute error},
+description = {The mean absolute error (MAE) is the mean of the absolute value of the errors. $$\text{MAE} = \frac{\sum\limits_{i=1}^n\left(|y_i - \hat{y_i}|\right)}{n}$$}
+}
+@entry{msa,
+name = {Measurement System Analysis},
+description = {Measure system analysis (MSA) is a method to evaluate measurements systems, to understand the causes of measurement variation},
+}
+@entry{mse,
+name = {mean squared error},
+description = {The mean squared error (MSE) is the mean of the squared errors. $$\text{MSE} = \frac{\sum\limits_{i=1}^n\left(y_i - \hat{y_i}\right)^2}{n}$$}
+}
+@entry{pp,
+name = {process capability index two-sided (random sample)},
+description = {process capability index two-sided (random sample) ($P_\text{p}$) compares the width of the process specification to the width of the process variation},
+}
+@entry{ppk,
+name = {process capability index one-sided (random sample)},
+description = {The process capability index one-sided (random sample) ($P_\text{pk}$) calculates the distance from each specification limit to the \gls{averagestatistic}, compares them to the width of the process variation, and reports the smaller value.},
+}
+@entry{rmse,
+name = {root-mean-squared error},
+plural = {root-mean-squared errors},
+description = {The root-mean-squared error (RMSE) is a frequently-used measure of the differences between values predicted by a model or an estimator and the values observed. $$\text{RMSE} = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(y_i - \widehat{y}\right)^2}{n}}$$}
+}
+@entry{rpa,
+name = {robotic process automation},
+description = {Robotic process automation (RPA) uses software robots to handle repetitive computer tasks. The benefits include reduced execution time, customization for specific needs, perform complex workflows, and consistent repeatability to eliminate human errors.}
+}
+@entry{iam,
+name = {identity and access management},
+description = {Identity and access management (IAM) is a framework of policies and technologies to ensure that the right users have the appropriate access to technology resources. It identifies, authenticates, and controls access for individuals who will be using information technology resources, hardware, and access to applications.},
+}
+@entry{pam,
+name = {privileged access management},
+description = {Privileged access management (PAM) is a type of \gls{iam} and \gls{cybersecurity} technology that focuses on the control, monitoring, and protection of privileged accounts in an organization. Accounts with privileged access grant users enhanced permissions, making them prime targets for attackers due to their extensive access to vital systems and sensitive \glspl{datum}.}
+}
+@entry{xdr,
+name = {extended detection and response},
+description = {Extended detection and response (XDR) provides security incident detection and automated response capabilities for security infrastructure. It integrates threat intelligence and telemetry \glspl{datum} from multiple sources with security analytics to provide conceptualization and correlation of security alerts.}
+}
+@entry{abbreviation,
+name = {abbreviation},
+plural = {abbreviations},
+description = {It is a shortened form of a word.}
+}
+@entry{acronym,
+name = {acronym},
+plural = {acronyms},
+description = {It is a pronounceable word composed of a series of initial letters or parts of words.}
+}
+@entry{adhominem,
+name = {ad hominem},
+description = {Instead of dealing with an idea, one tries to denigrate the messenger.}
+}
+@entry{additive,
+    name = {additive},
+    description = {An additive model of \glspl{exog} imp;lies that the observed effects are due to main effects only and no interactions (\cite[][218]{boxhunterhunter1978}).}
+}
+@entry{amortization,
+name = {amortization},
+description = { Amortization spreads out the cost of an intangible asses over its useful lie. Do not count 'goodwill amortization' because it is not an economic expense. It is a non cash charge to account for the loss of value of an intangible assets over time.}
+}
+@entry{applicationprogramminginterface,
+name = {application programming interface},
+plural = {application programming interfaces},
+description = {It is a way for two or more \glspl{computerprogram} to communicate with each other. It is a type of software interface, offering a service to other pieces of software.}
+}
+@entry{argument,
+name = {argument},
+plural = {arguments},
+description = {Arguments are the values assigned to \glspl{parameter} when passed into a Python function or method during a function call.}
+}
+@entry{argumentpositional,
+name = {positional argument},
+plural = {positional arguments},
+description = {Positional arguments are values that are passed into a function based on the order in which the \glspl{parameter} were listed during the function definition.}
+}
+@entry{argumentkeyword,
+name = {keyword argument},
+plural = {keyword arguments},
+description = {Keyword arguments (named arguments) are values that, when passed into a function, are identifiable by specific \gls{parameter} names. A keyword argument is preceded by a \gls{parameter} and the assignment operator, =.}
+}
+@entry{artificialintelligence,
+name = {artificial intelligence},
+description = {Artificial intelligence (AI) is about creating computer systems that can perform tasks that typically require human intelligence, such as understanding language, recognizing images, and making decisions. It as teaching computers to think and learn like humans.}
+}
+@entry{artificialintelligenceagent,
+name = {AI agent},
+plural = {AI agents},
+description = {An AI agent is a software application that focuses on autonomous systems that can make decisions and perform tasks without human intervention. The independent systems automatically respond to conditions, to produce process results. An AI agent operates independently, making decisions through continuously learn and analysis of external data and complex data sets. Functioning agents can require various AI techniques, such as \gls{naturallanguageprocessing}, \gls{machinelearning}, and \gls{computervision}.}
+}
+@entry{agenticartificialintelligence,
+name = {agentic AI},
+description = {TBD},
+seealso={artificialintelligenceagent}
+}
+@entry{artificialintelligencechatbot,
+name = {AI chatbot},
+plural = {AI chatbots},
+description = {An AI chatbot is a software application designed to have textual or spoken conversations. It uses \gls{naturallanguageprocessing}, \gls{machinelearning} algorithms, and \gls{generativeartificialintelligence} systems that are capable of maintaining a conversation with  use in \gls{naturallanguage} and simulating the way a human would behave as a conversation partner.}
+}
+@entry{artificialnarrowintelligence,
+name = {artificial narrow intelligence},
+description = {Narrow artificial intelligence is limited to a single, narrowly defined task. Most modern \gls{artificialintelligence} systems are of this type. It is also called weak artificial intelligence.}
+}
+@entry{artificialgeneralintelligence,
+name = {artificial general intelligence},
+description = {Artificial general intelligence (AGI) means machines will be endowed with intelligence as good as the smartest human in any field, but because of its capabilities to integrate learning across many fields, it will probably become better than any average doctor, lawyer or computer programmer.}
+}
+@entry{artificialsuperintelligence,
+name = {artificial super intelligence},
+description = {Artificial super intelligence (ASI) is a computer brain that can exceed what any human can do in any field and then, with its \gls{polymath}ic ability, it could produce insights far beyond anything humans could do or even imagine. It might even invent its own language we do not understand.}
+}
+@entry{averagechart,
+plural = {average charts},
+name = {average chart ($\overline{X}$)},
+description = {It is a \gls{processbehaviourchart} that plots the \gls{averagestatistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{controlchartlimit} line, a lower \gls{controlchartlimit} line, and an \gls{averagestatistic} line.}
+}
+@entry{averagestatistic,
+plural = {averages},
+name = {average},
+description = {It is the sum of a set of values divided by the count of values. It is a type of \gls{locationstatistic}. $$\overline{Y} = \frac{\sum\limits_{i=1}^{n} X_i}{n}$$}
+}
+@entry{averagerangestatistic,
+plural = {average ranges},
+name = {average range},
+description = {It is the \gls{averagestatistic} of several \glspl{rangestatistic} of sample subgroups. A subgroup is sampled, a \gls{rangestatistic} is calculated, and the \gls{averagestatistic} of the \glspl{rangestatistic} is calculated.}
+}
+@entry{beautifulsoup,
+name = {Beautiful Soup},
+description = {It parses HTML and XML documents to create a tree-like representation
+of the document structure and extract \glspl{datum}. (\cite{beautifulsoup})}
+}
+@entry{betweenoperatorerror,
+name = {between-operator error},
+plural = {between-operator errors},
+description = {It is the variation in the \gls{averagestatistic} of measurements made by different operators measuring one characteristic on the same parts. It can be caused by differences in training, eduction, skill, and care in taking the measurements.}
+}
+@entry{betweenparterror,
+name = {between-part error},
+plural = {between-part errors},
+description = {It is the variation of measurements between samples of parts, that is, the part-to-part variation. If a sample is carefully chosen, the error is shown on the \gls{individualschart} or the \gls{averagechart}.}
+}
+@entry{betweensubgrouperror,
+plural = {between-subgroup errors},
+name = {between-subgroup error},
+description = {The subgroup averages are used to find an indirect estimate of the \gls{standarddeviation} of X.}
+}
+@entry{biaslinearity,
+name = {bias and linearity},
+description = {This is the difference between the measurement result and its unknown, true values. It can be eliminated by calibration to a standard. Bias is an \gls{averagestatistic} over all references values. Linearity or non-linearity is a difference in bias across all reference values.}
+}
+@entry{biometricdevice,
+name = {biometric device},
+plural = {biometric devices},
+description = {A biometric device is an electronic device that uses biometric identifiers to identify and verify individuals.}
+}
+@entry{biometricidentifier,
+name = {biometric identifier},
+plural = {biometric identifiers},
+description = {A biometric identifier is a unique physical characteristic that can be used to identify an individual. Examples include fingerprint, retina or iris, voiceprint, hand geometry, face geometry, ear geometry, and heartbeat.}
+}
+@entry{blocking,
+name = {blocking},
+description = {It is groups of experimental runs in which randomisation is restricted within a group, for example, four runs in the morning and four runs in the afternoon. The relative homogeneity within a block and the identification and inclusion of the block as a factor in the \gls{experiment} can be used to increase the accuracy of an \gls{experiment}.}
+}
+@entry{cappuccino,
+name = {cappuccino},
+plural = {cappuccinos},
+description = {Cappuccino is \gls{espresso} coffee topped with frothed hot milk or cream and often flavored with cinnamon.}
+}
+@entry{chisquaredistribution,
+plural = {chi-square distributions},
+name = {chi-square distribution},
+description = {It is the distribution of a sum of the squares of k independent standard normal random variables with k degrees of freedom.}
+}
+@entry{coder,
+name = {coder},
+plural = {coders},
+description = {A coder translates a problem into a language that the computer understands and creates a solution to that problem.}
+}
+@entry{commoncause,
+plural = {common causes},
+name = {common cause},
+description = {Variation due to common cause is expected and natural variation.},
+}
+@entry{computationallinguistics,
+name = {computational linguistics},
+description = {Computational linguistics is an interdisciplinary field concerned with the computational modeling of \gls{naturallanguage}, as well as the study of appropriate computational approaches to linguistic questions.}
+}
+@entry{computer,
+name = {computer},
+plural = {computers},
+description = {A computer is a machine that executes a \gls{computerprogram} to carry out sequences of operations to perform a set of tasks.}
+}
+@entry{computerprogram,
+name = {computer program},
+plural = {computer programs},
+description = {A computer program is a sequence of instructions written in a \gls{programminglanguage} that is executed by a computer.}
+}
+@entry{computervision,
+name = {computer vision},
+description = {Computer vision includes methods for acquiring, processing, analyzing, and understanding digital images, and extraction of high dimensional data from the real world in order to produce numerical or symbolic information, for example, in the form of decisions.}
+}
+@entry{conditionalprobability,
+plural = {conditional probabilities},
+name = {conditional probability},
+description = {TBD}
+}
+@entry{confidenceinterval,
+plural = {confidence intervals},
+name = {confidence interval},
+description = {In frequentist \gls{statistic}, it is a range of estimates for an unknown parameter, interval calculated from values in a sample.}
+}
+@entry{confounding,
+name = {confounding},
+description = {It is a column of an orthogonal array containing more than one effect which cannot be separated without further experimentation.}
+}
+@entry{confusionmatrix,
+name = {confusion matrix},
+plural = {cunfusion matrices},
+description = {In the field of \gls{machinelearning}, it s a table that shows the performance of an algorithm, typically a supervised learning model. Each row of the matrix represents the instances in an actual class while each column represents the instances in a predicted class.}
+}
+@entry{controlchart,
+plural = {control charts},
+name = {control chart},
+description = {It is a graphical plot used to determine if process variation is stable and predictable. A process that is in \gls{statisticalcontrol} means that the variation is due to \glspl{commoncause}. A process that is not in \gls{statisticalcontrol}, that is, out of control, means that the variation is due to \glspl{specialcause}.},
+}
+@entry{controlchartlimit,
+plural = {control chart limits},
+name = {control chart limit},
+description = {This is a limit of predictability for the \glspl{datum} plotted on the relevant control chart. It is usually set at three \glspl{standarddeviation} from a measure of \gls{location}.}
+}
+@entry{conversationalartificialintelligence,
+name = {conversational artificial intelligence},
+description = {Conversational artificial intelligence refers to any \gls{artificialintelligence} system designed to interact with users through \gls{naturallanguage} conversation.}
+}
+@entry{datum,
+name = {datum},
+plural = {data},
+description = {A datum is an individual value in a collection of data, discrete or continuous values that convey information, describing the quantity, quality, fact, \gls{statistic}, other basic units of meaning, or simply sequences of symbols that may be further interpreted formally. Data are usually organized into structures such as tables that provide additional context and meaning, and may themselves be used as data in larger structures.}
+}
+@entry{dataanalyst,
+name = {data analyst},
+plural = {data analysts},
+description = {This individual can quickly get a sense of what is worth pursuing with more care in an existing \gls{dataset}. Fast and humble, and sloppy code are acceptable traits of this role. This individual uses \gls{statistic} and visualizations to explore the \glspl{datum}, without coming to conclusions or decisions.}
+}
+@entry{dataengineer,
+name = {data engineer},
+plural = {data engineers},
+description = {A data engineer prepares \glspl{datum} for analytical and operational uses, that is, \gls{etl}. This individual is capable of preparing \glspl{datum} at scale from multiple sources and making it available to use in a production environment.}
+}
+@entry{dataleakage,
+name = {dataleakage},
+description = {In \gls{machinelearning}, it is learning something from the \gls{testdataset} that one is not allowed to know.}
+}
+@entry{datascience,
+name = {data science},
+description = {It is the science of extracting knowledge and insights from \glspl{datum}.}
+}
+@entry{datasciencearchitect,
+name = {data science architect},
+plural = {data science architects},
+description = {The \gls{datascience} architect designs the collection, storage, and analyses processes, while considering time and cost-tradeoffs, and business requirements. This individual has expertise as a \gls{dataengineer}, \gls{dataanalyst}, \gls{machinelearningengineer}, and \gls{statistician}.}
+}
+@entry{datascientist,
+name = {data scientist},
+plural = {data scientists},
+description = {A data scientist applies the methodologies and tools of \gls{datascience}. This individual has expertise as a \gls{dataanalyst}, \gls{machinelearningengineer}, and \gls{statistician}.}
+}
+@entry{dataset,
+name = {data set},
+plural = {data sets},
+description = {A data set is a collection of \glspl{datum}. In the case of tabular \glspl{datum}, a data set corresponds to one or more database tables, where every column of a table represents a particular variable, and each row corresponds to a given record of the data set in question. The data set lists values for each of the variables, such as for example height and weight of an object, for each member of the data set. Data sets can also consist of a collection of documents or files.}
+}
+@entry{dawgdad,
+name = {dawgdad},
+description = {It is a Python package for statistical, graphical, and predictive analysis. To use dawgdad, install a Python distribution appropriate to your operating system. Then install dawgdad following the instructions at \href{https://github.com/gillespilon/dawgdad}{dawgdad}.}
+}
+@entry{decisionmaker,
+name = {decision maker},
+plural = {decision makers},
+description = {It is someone who understands the art and science of data-driven decision-making. This individual is responsible for identifying decisions worth making with \glspl{datum}, framing them (everything from designing metrics to calling the shots on statistical assumptions), and determining the required level of analytical rigour based on potential impact on the business.}
+}
+@entry{deeplearning,
+name = {deep learning},
+description = {It is a type of \gls{machinelearning} using an \gls{artificialneuralnetwork} containing multiple \glspl{hiddenlayer}.}
+}
+@entry{deepmodel,
+name = {deep model},
+plural = {deep models},
+description = {See \gls{deeplearning}.}
+}
+@entry{deepneuralnetwork,
+name = {deep neural network},
+plural = {deep neural networks},
+description = {See \gls{deeplearning}.}
+}
+@entry{deprecation,
+name = {deprecation},
+plural = {deprecations},
+description = {A document has been superseded. It is recommended to not use the older document. It may not conform to current standard. It may contain errors or incorrect information. It may contain links to documents that no longer exist or their location is unknown. The content may be ambiguous or confusing to users.}
+}
+@entry{depreciation,
+name = {depreciation},
+description = {It is a business expense. At some point a physical asset needs repairs or becomes obsolete. Money is spent before one gets revenue. A business should typically spend more than its depreciation to repair or acquire physical assets. Depreciation spreads out the cost of a tangible asset over its useful life. It is a non cash charge to account for the loss of value of a tangible assets over time.}
+}
+@entry{designedexperiment,
+name = {designed experiment},
+plural = {designed experiments},
+description = {It is a method to change factors simultaneously (inputs) using a structured pattern, in order to determine their effect on some response(s) (output(s)).}
+}
+@entry{descriptiveanalytics,
+name = {descriptive analytics},
+description = {It seeks to get inspired with an existing \gls{dataset}, to summarize with \gls{statistic} and visualizations, to look for patterns for possible further analysis using \gls{machinelearning}.}
+}
+@entry{digitalhuman,
+name = {digital human},
+description = {See \gls{virtualhuman}},
+}
+@entry{digitalperson,
+name = {digital person},
+description = {See \gls{virtualhuman}},
+}
+@entry{digitaltransformation,
+name = {digital transformation},
+plural = {digital transformations},
+description = {It is a process that aims to improve an entity by triggering significant changes to its properties through combinations of information, computing, communication, and connectivity technologies.}
+}
+@entry{discriminativemodel,
+plural = {discriminative model},
+name = {discriminative models},
+description = {In \gls{statisticalclassification} a discriminative approach computers a classifier such as logistic regression. A discriminative model is a model of the \gls{conditionalprobability} $P(Y | X = x)$ of the target $Y$ given an \gls{observation} $x$. It can be used to discriminate the value of the target variable $Y$ given an \gls{observation} $x$.}
+}
+@entry{dispersion,
+plural = {dispersions},
+name = {dispersion},
+description = {A sample of values will not (usually) have all values identical. Dispersion is the variation between values. Large dispersion means the values are widely scattered. Small dispersion means the values are narrowly scattered.}
+}
+@entry{dispersionstatistic,
+plural = {dispersion statistics},
+name = {dispersion statistic},
+description = {It is a statistic that estimates the spread or variability of the \glspl{datum}. It is also called a measure of scale. Examples include the variance, the \gls{standarddeviation}, the \gls{rangestatistic}, the \gls{aad}, the \gls{mad}, and the \gls{iqr}.}
+}
+@entry{distancetonearestspecification,
+name = {distance to nearest specification (sigma level)},
+description = {Is the difference between the \gls{location} statistic and the closest specification limit, divided by the \gls{dispersion} statistic (e.g. the \gls{standarddeviation}).}
+}
+@entry{distancetotarget,
+name = {distance to target},
+description = {The difference between the specification target and the \gls{averagestatistic} is the difference you must adjust to aim the process correctly.}
+}
+@entry{distributionpackage,
+name = {distribution package},
+plural = {distribution packages},
+description = {A distribution package is a version controlled archive file that contains Python packages, modules, and other resources files that are used to distribute a release. The archive file is what an end-user will download from the internet and install. A distribution package is a piece of software that you can install. Most of the time, this is synonymous with “project.” When you type \textcolor{orange}{pip install pkg}, or when you write \textcolor{orange}{dependencies = [\enquote{pkg}]} in your \textcolor{orange}{pyproject.toml}, pkg is the name of a distribution package. When you search or browse the \href{https://pypi.org/}{PyPI}, the most widely known centralized source for installing Python libraries and tools, what you see is a list of distribution packages.}
+}
+@entry{docstring,
+name = {docstring},
+plural = {docstrings},
+description = {It is the embedded documentation for a Python module, class, function etc., usually in code as a string at the beginning of the object's definition.}
+}
+@entry{dotplot,
+plural = {dot plots},
+name = {dot plot},
+description = {It is a chart in which dots are used to depict the quantitative values (e.g. counts) associated with categorical variables.}
+}
+@entry{earnings,
+name = {earnings},
+plural = {earnings},
+description = {TBD}
+}
+@entry{ebitda,
+name = {EBITDA},
+description = {\Gls{earnings} Before \Gls{interest} \Gls{taxes} \Gls{depreciation} and \Gls{amortization}. If the EBITDA is not stated, one can calculate EBIT from earnings (net income) + non operating expense + income taxes on the income statement, and DA from non cash charges on the cash flow statement. EBITDA is typically used by private equity companies to inflate their cash flow in order to obtain loans for business acquisitions.}
+}
+@entry{edr,
+name = {endpoint detection and response},
+description = {Endpoint detection and response (EDR) is \gls{cybersecurity} technology that continually monitors an endpoint (mobile phone, laptop, internet of things devices) to mitigate malicious cyber threats},
+}
+@entry{etl,
+name = {extract, transform, and load},
+description = {At a high level extract, transform, and load  (ETL) extracts, transforms, and loads \glspl{datum}. The specific tasks include: building \glspl{datum} pipelines to gather information from difference source systems; integrate, consolidate, and clean data; structure the \glspl{datum} for use in individual analytics applications.}
+}
+@entry{eargeometry,
+name = {ear geometry},
+description = {TBD}
+}
+@entry{effect,
+name = {effect},
+plural = {effects},
+description = {It is the change in response caused by a change in the level of a factor (\cite[][114]{hicks1982}).}
+}
+@entry{embeddedsystem,
+name = {embedded system},
+plural = {embedded systems},
+description = {An embedded system is a specialized computer system; a combination of a computer processor, computer memory, and peripheral devices for input and output, that has a dedicated function within a larger mechanical or electronic system. It is embedded as part of a complete device often including electrical or electronic hardware and mechanical parts. Because an embedded system typically controls physical operations of the machine that it is embedded within, it often has real-time computing constraints. Embedded systems control many devices in common use.}
+}
+@entry{embeddedoperatingsystem,
+name = {embedded operating system},
+plural = {embedded operating systems},
+description = {An embedded operating system is an \gls{operatingsystem} designed and optimized to improve the efficiency of managing the hardware resources and reduce response times specifically for the task the device was created for.}
+}
+@entry{empiricalmethod,
+name = {empirical method},
+description = {It is any procedure for conducting an investigation that relies upon experimentation and systematic \gls{observation} rather than theoretical speculation.}
+}
+@entry{endog,
+name = {endogenous variable},
+plural = {endogenous variables},
+description = {Endogenous variables are explained or predicted by a model. They are caused by factors within the system. Other names are y, dependent variable, regressand, outcome, response variable, and target (\gls{machinelearning}). In $y = mX + b$, y is the endogenous variable.}
+}
+@entry{espresso,
+name = {espresso},
+plural = {espressos},
+description = {Espresso is coffee that is brewed by forcing hot water under high pressure through finely ground coffee beans.}
+}
+@entry{exog,
+name = {exogenous variable},
+plural = {exogenous variables},
+description = {Exogenous variables are terms in a model. They are caused by factors outside the system. Other names are x, independent variable, regressor, design, explanatory variable, and feature (\gls{machinelearning}). In $y = mX + b$, x is the exogenous variable. In a \gls{designedexperiment}, it is a factor that you can control, want to control, or is controlled at low cost.}
+}
+@entry{experiment,
+name = {experiment},
+plural = {experiments},
+description = {It is a series of \glspl{observation} conducted under controlled conditions to study a relationship with the purpose of drawing causal inferences about that relationship. An experiment involves the manipulation of an independent variable, the measurement of a dependent variable, and the exposure of various participants to one or more of the conditions being studied. Random selection of participants and their random assignment to conditions also are necessary in experiments.}
+}
+@entry{expectedmeansquares,
+name = {expected mean squares},
+description = {They are the expected values of certain \gls{statistic} arising in partitions of sums of squares in the analysis of variance. They can be used for ascertaining which statistic should appear in the denominator in an F test for testing a null hypothesis that a particular effect is absent.}
+}
+@entry{facegeometry,
+name = {face geometry},
+description = {TBD}
+}
+@entry{factor,
+name = {factor},
+plural = {factors},
+description = {It is an independent variable that may be changed from treatment to treatment.}
+}
+@entry{factorlevel,
+name = {factor level},
+plural = {factor levels},
+description = {It is the value that a factor in a \gls{designedexperiment} is set to.}
+}
+@entry{factorialexperiment,
+name = {factorial experiment},
+plural = {factorial experiments},
+description = {It is a \gls{designedexperiment} that measures all possible combinations of factors.}
+}
+@entry{featureengineering,
+name = {feature engineering},
+description = {It is the process of determining which \glspl{exog} might be useful in training a model, and then converting raw \glspl{datum} into said \gls{exog}. It is useful to have domain knowledge.}
+}
+@entry{fingerprint,
+name = {fingerprint},
+plural = {fingerprints},
+description = {A fingerprint is the impression of a fingertip on any surface.}
+}
+@entry{fixedeffectsmodel,
+name = {fixed effects model},
+plural = {fixed effects models},
+description = {It is a statistical model in which the model parameters are non-random quantities. The mathematical model that describes the relationship between the response and treatment for the one-way ANOVA is given by $Y_{ij} = \mu + \tau + \epsilon_{ij}$, where $Y_{ij}$ represents the j\textsuperscript{th} \gls{observation} ($j = 1, 2, \ldots, n_i$) on the i\textsuperscript{th} treatment ($i = 1, 2, \ldots, k$ levels). $\mu$ is the common effect for the whole \gls{experiment}, $\tau_i$ represents the i\textsuperscript{th} treatment effect, and $\epsilon_{ij}$ represents the random error present in the j\textsuperscript{th} \gls{observation} on the i\textsuperscript{th} treatment. The errors $\epsilon_{ij}$ are assumed to be normally and independently (NID) distributed, with mean zero and variance $\sigma^2_\epsilon$. $\mu$ is always a fixed parameter, and $\tau_1, \tau_2, \ldots, \tau_k$ are considered to be fixed parameters if the levels of the treatment are fixed and not a random sample from a population of possible levels. It is also assumed that $\mu$ is chosen so that $\sum \tau_i = 0,\;i = 1, \ldots, k$ holds. This is the fixed effects model.}
+}
+@entry{fractionalfactorialexperiment,
+name = {fractional factorial experiment},
+plural = {fractional factorial experiments},
+description = {It is a subset of a \gls{factorialexperiment}.}
+}
+@entry{generativeartificialintelligence,
+name = {generative artificial intelligence},
+description = {Generative artificial intelligence is a type of \gls{artificialintelligence} that can create new content, such as text, images, music, or code. It can learn from existing \glspl{datum} and then generate something new, original, and human like. It uses \glspl{generativemodel} to produce text, images, videos, or other forms of \glspl{datum}. These models learn the underlying patterns and structures of their \gls{trainingdataset} and use them to produce new \glspl{datum} based on the input, which often comes in the form of \gls{naturallanguage} prompts. A generative \gls{artificialintelligence} system is constructed by applying \gls{unsupervisedlearning} invoking \gls{artificialneuralnetwork} architectures (GAN, VAE, Transformer) or \gls{selfsupervisedlearning} to a \gls{dataset}. Generative artificial intelligence can be \gls{unimodal} or \gls{multimodal}.}
+}
+@entry{generativemodel,
+name = {generative model},
+plural = {generative models},
+description = {In \gls{statisticalclassification} the generative approach computes classifiers such as the naive Bayes classifier or the linear discriminative analysis. A discriminative model is a model of the \gls{conditionalprobability} $P(X | Y = y)$ of the observable $X$ given a target $Y$. A generative model can be used to generate random instances (outcomes) of an \gls{observation} $x$.}
+}
+@entry{github,
+name = {GitHub},
+description = {It is a cloud-based platform where you can store, share, and work together with others to write code.}
+}
+@entry{gitlab,
+name = {GitLab},
+description = {It is a cloud-based platform where you can store, share, and work together with others to write code.}
+}
+@entry{handgeometry,
+name = {hand geometry},
+description = {TBD}
+}
+@entry{heartbeat,
+name = {heartbeat},
+plural = {heartbeats},
+description = {A heartbeet is one complete pulsation of the heart.}
+}
+@entry{heptapodfoss,
+name = {Heptapod FOSS},
+description = {It is a web-based platform designed to bring Mercurial support to \Gls{gitlab}.}
+}
+@entry{hiddenlayer,
+name = {hidden layer},
+plural = {hidden layers},
+description = {It is a synthetic layer in a \gls{artificialneuralnetwork} between the input layer (the \glspl{exog}) and the output layer (the \gls{prediction}). Hidden layers typically contain an activation function (such as ReLU) for training. An \gls{artificialneuralnetwork} contains more than one hidden layer.}
+}
+@entry{hubris,
+name = {hubris},
+description = {It describes a personality quality of extreme or excessive pride or dangerous overconfidence, often in combination with (or synonymous with) arrogance. Hubris often indicates a loss of contact with reality and an overestimation of one's own competence, accomplishments or capabilities.}
+}
+@entry{humanlanguage,
+name = {human language},
+plural = {human languages},
+description = {It is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time. Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.}
+}
+@entry{hypothesistest,
+plural = {hypothesis tests},
+name = {hypothesis test},
+description = {It is a method for proving that an observed difference was not due to random chance.}
+}
+@entry{imagenet,
+name = {ImageNet},
+description = {The ImageNet project is a large visual database designed for use in visual object recognition software research. More than 14 million images have been hand-annotated by the project to indicate what objects are pictured and in at least one million of the images, bounding boxes are also provided. ImageNet contains more than 20,000 categories, with a typical category, such as ``balloon'' or ``strawberry'', consisting of several hundred images. The database of annotations of third-party image URLs is freely available directly from ImageNet, though the actual images are not owned by ImageNet. Since 2010, the ImageNet project runs an annual software contest, the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), where software programs compete to correctly classify and detect objects and scenes. The challenge uses a ``trimmed'' list of one thousand non-overlapping classes.}
+}
+@entry{individualschart,
+plural = {individuals charts ($\text{X}$)},
+name = {individuals chart ($\text{X}$)},
+description = {It is a \gls{processbehaviourchart} that plots the single values taken in a rational manner. The chart also has an upper \gls{controlchartlimit} line, a lower \gls{controlchartlimit} line, and an \gls{averagestatistic} line.}
+}
+@entry{ineffable,
+name = {ineffable},
+description = {It means incapable of being expressed in words.}
+}
+@entry{instance,
+name = {instance},
+plural = {instances},
+description = {It is an example, an \gls{observation}, or a row of a spreasheet.}
+}
+@entry{interaction,
+name = {interaction},
+plural = {interactions},
+description = {It is a dependent relation between two factors. In a \gls{designedexperiment}, if the \glspl{effect} of factor A are not the same at all levels of factor B, then A and B interact.}
+}
+@entry{interest,
+name = {interest},
+description = {TBD}
+}
+@entry{iris,
+name = {iris},
+plural = {irises},
+description = {The iris is the opaque contractile diaphragm perforated by the pupil and forming the colored portion of the eye.}
+}
+@entry{jax,
+name = {JAX},
+description = {It is a Python library for accelerator oriented array computation and program transformation, designed for high performance numerical computing and large-scale \gls{machinelearning}. It was developed by Google.}
+}
+@entry{jointprobabilitydistribution,
+name = {joint probability distribution},
+plural = {joint probability distributions},
+description = {TBD}
+}
+@entry{keras,
+name = {Keras},
+description = {It is  \gls{opensourcesoftware} for \gls{deeplearning} with an \gls{applicationprogramminginterface} that makes it very simple to train and run \glspl{artificialneuralnetwork}. It can run on top of \gls{tensorflow} and other \glspl{softwareframework} (\gls{jax}, \gls{pytorch}).}
+}
+@entry{kfoldcrossvalidation,
+name = {K-fold cross-validation},
+plural = {K-fold cross-validations},
+description = {It is a \gls{machinelearning} technique that divides all the samples in  groups of samples, called folds (if , this is equivalent to the Leave One Out strategy), of equal sizes (if possible). The prediction function is learned using  folds, and the fold left out is used for test. Step 1. Split the dadtaset into K equal partitions or folds. Step 2. Use fold 1 as the testing set and the union of the other folds as the training set. Step 3. Calculate testing accuracy. Step 4. Repeat steps 2-3 K times, using a different fold as the testing set each time. Step 5. Use the average testing accuracy as the estimate of out-of-sample accuracy.}
+}
+@entry{kmeansclustering,
+name = {K-means clustering},
+description = {It is an algorithm that divides n \glspl{observation} into k clusters, in which each \gls{observation} belongs to the cluster with the nearest mean. This algorithm clusters \glspl{datum} by trying to separate \glspl{observation} into k clusters of equal variance, minimizing the within-cluster sum-of-squares.}
+}
+@entry{label,
+name = {label},
+plural = {labels},
+description = {It is an answer, a target, a ground truth, or an output.}
+}
+@entry{labeleddata,
+name = {labeled data},
+description = {Labeled \glspl{datum} is a collection of raw \glspl{datum} that has been assigned labels to provide context and meaning. Labels can be used to categorize \glspl{datum}, such as by indicating whether an image contains a cat or dog, or if an audio recording includes a specific word.}
+}
+@entry{largelanguagemodel,
+name = {large language model},
+description = {A large language model (LLM) is a type of artificial intelligence model that is trained on a massive amount of text \glspl{datum}. It is capable of generating human quality text, translating languages, writing different kinds of creative content, and answering one's questions in an informative way. Thus it is a form of \gls{generativeartificialintelligence}. It is a specific type of \gls{artificialintelligence} model within the \gls{naturallanguageprocessing} field. A large language model requires very large \glspl{dataset}.}
+}
+@entry{latex,
+name = {LaTeX},
+description = {LaTex, pronounced \enquote{lay-tech,} is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software (\cite{oetiker_serwin_partl_hyna_schlegl}).}
+}
+@entry{linearregression,
+name = {linear regression},
+plural = {linear regressions},
+description = {It is a linear approach for modeling the relationship between a scalar \gls{endog} and and \gls{exog}. The case of one \gls{exog} is called simple linear regression. The case of more than one \gls{exog} is called multiple linear regression.}
+}
+@entry{location,
+plural = {locations},
+name = {location},
+description = {It is the central value of a sample of values or distribution.}
+}
+@entry{locationstatistic,
+plural = {location statistics},
+name = {location statistic},
+description = {It is a statistic that estimates the central value that best describes the \glspl{datum}. Examples include the \gls{averagestatistic}, \gls{median}, and \gls{mode}.}
+}
+@entry{logisticregression,
+name = {logistic regression},
+plural = {logistic regressions},
+description = {In \gls{statistic}, the (binary) logistic model (or logit model) is a statistical model that models the probability of one event (out of two alternatives) taking place by having the log-odds (the logarithm of the odds) for the event be a linear combination of one or more independent variables (predictors). In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (the coefficients in the linear combination).}
+}
+@entry{machinelearning,
+name = {machine learning},
+description = {It is a field of study that gives computers the ability to learn without being explicitly programmed (\cite[]{samuel1959}). It is an approach to making repeated decisions that involves algorithmically finding patterns in \glspl{datum} and using these to make models that deal correctly with new \glspl{datum}. There are four types of machine learning: \gls{supervisedlearning}, \gls{unsupervisedlearning}, \gls{semisupervisedlearning}, and \gls{reinforcementlearning}. A common task in machine learning is to build a model from \glspl{dataset}. There are three \glspl{dataset} commonly used in the different stages of the creation of the model: \gls{trainingdataset}, \gls{validationdataset}, and \gls{testdataset}.}
+}
+@entry{machinelearningengineer,
+name = {machine learning engineer},
+plural = {machine learning engineers},
+description = {This individual understands how to use algorithms to create models. Their expertise at wrangling code gets existing algorithms to accept and chrun through \glspl{datum} to create models from old \glspl{datum} to succeed with new \glspl{datum}. This individual can code quickly and can cope with failure. You cannot know in advance what what will work, so you cannot expect to get a perfect result on the first go. This individual iterates towards a solution.}
+}
+@entry{machinelearninghyperparameter,
+name = {machine learning hyperparameter},
+plural = {machine learning hyperparameters},
+description = {In \gls{machinelearning} it is a \gls{machinelearningparameter} that can be set in order to define any configurable part of a model's learning process. Hyperparameters can be classified as either model hyperparameters or algorithm hyperparameters.}
+}
+@entry{machinelearningparameter,
+name = {machine learning parameter},
+plural = {machine learning parameters},
+description = {In \gls{machinelearning} it is a characteristic that the model learns from the \gls{dataset}.}
+}
+@entry{machinetranslation,
+name = {machine translation},
+description = {TBD}
+}
+@entry{maineffect,
+name = {main effect},
+plural = {main effects},
+description = {It is the effect of a single factor in a \gls{designedexperiment}.}
+}
+@entry{matplotlib,
+name = {Matplotlib},
+description = {Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. It is widely used for \glspl{datum} visualization and plotting in the \gls{python} \gls{programminglanguage}.}
+}
+@entry{median,
+plural = {medians},
+name = {median},
+description = {It is the value of the point which has half the \glspl{datum} smaller than that point and half the \glspl{datum} larger than that point. There are various formulae to calculate the median, for example JMP, Minitab, and SAS estimate it in different ways.}
+}
+@entry{metaphor,
+name = {metaphor},
+plural = {metaphors},
+description = {A metaphor is the use of a word or phrase to refer to something other than its literal meaning, invoking an implicit similarity between the thing described and what is denoted by the word or phrase.}
+}
+@entry{mixedeffectsmodel,
+name = {mixed effects model},
+plural = {mixe deffects models},
+description = {It is a statistical model contain both \gls{fixedeffectsmodel} and \gls{randomeffectsmodel}.}
+}
+@entry{mode,
+plural = {modes},
+name = {mode},
+description = {It is the value of the random sample that occurs with the greatest frequency.}
+}
+@entry{movingrangechart,
+name = {moving range chart ($\text{mR}$)},
+plural = {moving range charts ($\text{mR}$)},
+description = {It is a \gls{processbehaviourchart} that plots the difference between successive pairs of values taken in a rational manner. The chart also has an upper \gls{controlchartlimit} line, a lower \gls{controlchartlimit} line, and an \gls{averagestatistic} line.},
+}
+@entry{multimodal,
+name = {multimodaltraining},
+description = {Multimodal training refers to the process of teaching a \gls{machinelearning} model to process and understand \glspl{datum} from multiple sources, like text, images, and audio (modalities), allowing it to learn relationships between these various \glspl{datum} types and create a comprehensive understanding of the information presented; essentially, training a model to analyze and interpret the world through multiple senses, similar to how humans do.}
+}
+@entry{naivebayesclassifier,
+name = {naive Bayes classifier},
+plural = {naive Bayes classifiers},
+description = {It is a family of simple probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features.}
+}
+@entry{naturallanguage,
+name = {natural language},
+plural = {natural languages},
+description = {A natural language is any language that occurs naturally in a human community by a process of use, repetition, and change without conscious planning or premeditation.}
+}
+@entry{naturallanguageprocessing,
+name = {natural language processing},
+description = {\Gls{naturallanguage} processing is a field of artificial intelligence that focuses on the interaction between computers and \gls{humanlanguage} (\gls{naturallanguage}). It involves writing \glspl{computerprogram} to understand, interpret, and generate \gls{humanlanguage}. It is a broad field that encompasses various techniques and applications related to \gls{naturallanguage}. It is a form of \gls{generativeartificialintelligence}. Some examples of natural language processing models are \gls{sentimentanalysis}, \gls{textclassification}, and \gls{topicmodel}.}
+}
+@entry{nelsonsrules,
+name = {Nelson's Rules},
+description = {They are a set of \gls{processbehaviourchart} rules for assessing statistical control.}
+}
+@entry{artificialneuralnetwork,
+name = {artificial neural network},
+plural = {artificials neural networks},
+description = {It is a network of artificial neurons or nodes.}
+}
+@entry{normaldistribution,
+plural = {normal distributions},
+name = {normal distribution},
+description = {It is a type of continuous probability distribution for a real-valued random variable}
+}
+@entry{observation,
+name = {observation},
+plural = {observations},
+description = {It is the careful, close examination of an object, process, or other phenomenon for the purpose of collecting data about it or drawing conclusions.}
+}
+@entry{onedimarray,
+name = {1d array},
+description = {One-dimensional array. A NumPy array whose \textit{.shape} has length 1. A vector.}
+}
+@entry{openpyxl,
+name = {openpyxl},
+description = {It is a \Gls{python} library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files. (\cite{openpyxl})}
+}
+@entry{opensourcesoftware,
+name = {open-source software},
+description = {It is computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code to anyone and for any purpose. Open-source software may be developed in a collaborative public manner. Open-source software is a prominent example of open collaboration, meaning any capable user is able to participate online in development, making the number of possible contributors indefinite. The ability to examine the code facilitates public trust in the software.}
+}
+@entry{operatingsystem,
+name = {operating system},
+plural = {operating systems},
+description = {An operating system is software that manages computer hardware and software resources, and provides common services for \glspl{computerprogram}.}
+}
+@entry{outlier,
+plural = {outliers},
+name = {outlier},
+description = {It is a \gls{datum} point that differs significantly from other \glspl{observation}. An outlier may be due to variability in the measurement or it may indicate experimental error. An outlier can cause serious problems in statistical analyses.}
+}
+@entry{overfitting,
+name = {overfitting},
+description = {It is the production of an analysis that corresponds too closely or exactly to a particular set of \glspl{datum}, and may therefore fail to fit to additional \glspl{datum} or predict future \glspl{observation} reliably. An overfitted model is a mathematical model that contains more parameters than can be justified by the \glspl{datum}. The essence of overfitting is to have unknowingly extracted some of the residual variation (that is, the noise) as if that variation represented underlying model structure. The possibility of over-fitting exists because the criterion used for selecting the model is not the same as the criterion used to judge the suitability of a model. For example, a model might be selected by maximizing its performance on some set of \gls{trainingdataset}, and yet its suitability might be determined by its ability to perform well on unseen data; then over-fitting occurs when a model begins to \enquote{memorize} \gls{trainingdataset} rather than \enquote{learning} to generalize from a trend. As an extreme example, if the number of parameters is the same as or greater than the number of \glspl{observation}, then a model can perfectly predict the \gls{trainingdataset} simply by memorizing the \glspl{datum} in its entirety. Such a model, though, will typically fail severely when making predictions.}
+}
+@entry{pandas,
+name = {pandas},
+description = {It is an open source, BSD-licensed library providing high-performance, easy-to-use \glspl{datum} structures and \glspl{datum} analysis tools for the \Gls{python} \gls{programminglanguage}. (\cite{pandas})}
+}
+@entry{parameter,
+name = {parameter},
+plural = {parameters},
+description = {Parameters are the input variables bounded by parentheses when defining a Python function.}
+}
+@entry{phacking,
+name = {p-hacking},
+description = {It is the use of \gls{descriptiveanalytics} to uncover patterns in \glspl{datum} that can be presented as statistically significant, without first devising a specific hypothesis about the underlying causality.}
+}
+@entry{parallelismchart,
+plural = {parallelism charts},
+name = {parallelism chart},
+description = {It is a \gls{processbehaviourchart} that plots the lines from the average chart and puts them on top of each other. It is used in measurement system analysis. Differences for any part indicate an operator bias relative to other operators.}
+}
+@entry{polymath,
+name = {polymath},
+plural = {polymaths},
+description = {A polymth is an individual whose knowledge spans many different subjects, known to draw on complex bodies of knowledge to solve specific problems.}
+}
+@entry{prediction,
+name = {prediction},
+plural = {predictions},
+description = {It is the output of a model.}
+}
+@entry{probabilitydistribution,
+name = {probability distribution},
+plural = {probability distributions},
+description = {In \gls{probabilitytheory} and \gls{statistics}, a probability distribution is the mathematical function that gives the probabilities of occurrence of possible outcomes for an \gls{experiment}. It is a mathematical description of a random phenomenon in terms of its \gls{samplespace} and the probabilities of event (subsets of the \gls{samplespace}).}
+}
+@entry{probabilitytheory,
+name = {probability theory},
+plural = {probability theories},
+description = {TBD}
+}
+@entry{probableerror,
+name = {probable error},
+plural = {probable errors},
+description = {It is also called resolution. It is the interval within which a single measurement might occur 50 \% of the time, $\pm 0.6745 \times \sigma_\text{pure error}$.}
+}
+@entry{processbehaviourchart,
+name = {process behaviour chart},
+plural={process behaviour charts},
+description = {TBD},
+seealso={controlchart}
+}
+@entry{processcapability,
+name = {process capability},
+plural = {process capabilities},
+description = {It is the ability of a process to meet a performance standard.},
+}
+@entry{processcapabilityindex,
+name = {process capability index},
+plural = {process capability indices},
+description = {It is the ratio of a specification measure and a \gls{dispersion} measure.}
+}
+@entry{programminglanguage,
+name = {programming language},
+plural = {programming languages},
+description = {A programming language is a system of notation for writing \glspl{computerprogram}.}
+}
+@entry{promptengineering,
+name = {prompt engineering},
+description = {It is the practice of carefully crafting and optimizing the input text in a \gls{naturallanguage}, called a \textit{prompt}, given to a generative \gls{artificialintelligence} model to ensure it produces the most accurate, relevant, and desired output.}
+}
+@entry{pyautogui,
+name = {PyAutoGUI},
+description = {It lets your \Glspl{pythonscript} control the mouse and keyboard to automate interactions with other applications. The API is designed to be simple. It works on Windows, macOS, and Linux, and runs on \Gls{python} 2 and 3.” (\cite{pyautogui})}
+}
+@entry{pytesseract,
+name = {Python Tesseract},
+description = {Python Tesseract is a wrapper for \Gls{tesseract}. It is also useful as a stand-alone invocation script to tesseract, as it can read all image types supported by the Pillow and Leptonica imaging libraries, including jpeg, png, gif, bmp, tiff, and others. Additionally, if used as a script, Python Tesseract will print the recognized text instead of writing it to a file. (\cite{pytesseract})}
+}
+@entry{python,
+name = {Python},
+description = {Python is an easy to learn, powerful \gls{programminglanguage}. It has efficient high-level \glspl{datum} structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms. (\cite{python})}
+}
+@entry{pythonclass,
+name = {Python class},
+plural = {Python classes},
+description = {A Python class is a blueprint for creating objects. It defines the properties and methods (structure) that will be shared by all instances of that class.}
+}
+@entry{pythonmethod,
+name = {Python method},
+plural = {Python methods},
+description = {A Python method is a \gls{pythonfunction} defined with a \gls{pythonclass}. It operates on the \glspl{datum} (\gls{pythonattribute}) associated with an objects of the class.}
+}
+@entry{pythonattribute,
+name = {Python attribute},
+plural = {Python attributes},
+description = {A Python attribute is a variable associated with an object. It represents the \glspl{datum} or state of an object.}
+}
+@entry{pythonfunction,
+name = {Python function},
+plural = {Python functions},
+description = {A Python function is a reusable block of code that performs a specific task. It takes input, processes it, and returns an output.}
+}
+@entry{pythonlibrary,
+name = {Python library},
+plura = {Python librairies},
+description = {A \gls{python} library is a collection of code modules to extend the functionality of the \gls{python} \gls{programminglanguage}. These modules contain functions, classes, and variables that can be used to perform specific tasks.}
+}
+@entry{pythondistribution,
+name = {Python distribution},
+plural = {Python distributions},
+description = {A Python distribution is a software bundle containing a Python interpreter and the Python standard library. It can be installed from the \href{https://www.python.org/downloads/}{Python.org distribution page} or using the package manager of various operating systems.}
+}
+@entry{pythonscript,
+name = {Python script},
+plural = {Python scripts},
+description = {A \Gls{python} script is a plain text file of \Gls{python} commands that is executed on a compute terminal, also known as a shell.  A \Gls{python} script is typically saved in a plain text file with a .py extension. To run a \Gls{python} script, you need a \Gls{python} interpreter installed on your computer. The interpreter reads the code in the script line by line, translates it into machine code the computer understands, and executes the instructions.}
+}
+@entry{pytorch,
+name = {PyTorch},
+description = {It is an \gls{opensourcesoftware} \gls{softwareframework} for \gls{machinelearning} and \gls{artificialintelligence}. It can be used across a range of tasks but has a particular focus on \gls{naturallanguageprocessing} and \gls{computervision}. It was developed by Meta.}
+}
+@entry{randomeffectsmodel,
+name = {random effects model},
+plural = {random effects models},
+description = {It is also called a variance components model. It is a statistical model where the model parameters are random quantities. The mathematical model that describes the relationship between the response and treatment for the one-way ANOVA is given by $Y_{ij} = \mu + \tau + \epsilon_{ij}$, where $Y_{ij}$ represents the j\textsuperscript{th} \gls{observation} ($j = 1, 2, \ldots, n_i$) on the i\textsuperscript{th} treatment ($i = 1, 2, \ldots, k$ levels). $\mu$ is the common effect for the whole \gls{experiment}, $\tau_i$ represents the i\textsuperscript{th} treatment effect, and $\epsilon_{ij}$ represents the random error present in the j\textsuperscript{th} \gls{observation} on the i\textsuperscript{th} treatment. The errors $\epsilon_{ij}$ are assumed to be normally and independently (NID) distributed, with mean zero and variance $\sigma^2_\epsilon$. $\mu$ is always a fixed parameter, and $\tau_1, \tau_2, \ldots, \tau_k$ are considered to be random parameters if the levels of the treatment are random and not a fixed sample from a population of possible levels. It is also assumed that $\mu$ is chosen so that $\sum \tau_i = 0,\;i = 1, \ldots, k$ holds. This is the random effects model.}
+}
+@entry{randomforest,
+name = {random forest},
+plural = {random forests},
+description = {It is an ensemble learning method for classification, prediction, and other tasks that operates by constructing a multitude of decision trees.}
+}
+@entry{randomisation,
+name = {randomisation},
+plural = {randomisations},
+description = {It is a reordering of treatments in a \gls{designedexperiment} from the order shown in an orthogonal array in order to avoid the effect of unknown factors and the bias due to sequence.}
+}
+@entry{rangechart,
+name = {range chart ($\text{R}$)},
+plural = {range charts ($\text{R}$)},
+description = {It is a \gls{processbehaviourchart} that plots the \gls{rangestatistic} of a subgroup of values taken in a rational manner. The chart also has an upper \gls{controlchartlimit} line, a lower \gls{controlchartlimit} line, and an \gls{averagestatistic} line.}
+}
+@entry{rangestatistic,
+name = {range},
+plural = {ranges},
+description = {It is the difference between the largest and smallest value in a sample. $X_\text{max} - X_\text{min}$}
+}
+@entry{reinforcementlearning,
+name = {reinforcement learning},
+description = {It is an area of \gls{machinelearning} concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.}
+}
+@entry{requests,
+name = {Requests},
+description = {It  is a simple, yet elegant, HTTP library. Requests allows you to send HTTP/1.1 requests extremely easily. (\cite{requests})}
+}
+@entry{residualerror,
+name = {residual error},
+plural = {residual errors},
+description = {It is the difference between the actual response value obtained in a treatment of a \gls{designedexperiment} and the estimate value from a regression model of factors (\cite[][333-334]{boxhunterhunter1978}).}
+}
+@entry{resolution,
+name = {resolution},
+plural = {resolutions},
+description = {It is a method to categorize the amount of confounding in an \gls{experiment}. The higher the resolution number, the less the confounding. The resolution of a two-level fractional factorial design is the length of the shortest word in the defining relation (\cite[][385-390]{boxhunterhunter1978}).}
+}
+@entry{resolutioniiidesign,
+name = {resolution III design},
+plural = {resolution III designs},
+description = {Main effects are foundounded with two-factor interactions (\cite[][385-390]{boxhunterhunter1978}).}
+}
+@entry{responsegraph,
+name = {response graph},
+plural = {response graphs},
+description = {It is a plot of the response versus the levels for a factor.}
+}
+@entry{retina,
+name = {retina},
+plural = {retinas},
+description = {The retina is the sensory membrane that lines the eye, is composed of several layers including one containing the rods and cones, and functions as the immediate instrument of vision by receiving the image formed by the lens and converting it into chemical and nervous signals which reach the brain by way of the optic nerve.}
+}
+@entry{samplespace,
+name = {sample space},
+plural = {sample spaces},
+description = {It is the set of all possible outcomes of a random phenomenon being observed.}
+}
+@entry{sap,
+name = {Systems, Applications, and Products},
+description = {Systems, Applications, and Products (SAP) is a suite of software solutions developed by the German company SAP SE. SAP software is primarily focused on Enterprise Resource Planning (ERP), which means it helps businesses manage and integrate various core functions.}
+}
+@entry{science,
+name = {science},
+description = {Science is a systematic discipline that builds and organizes knowledge in the form of testable hypotheses and predictions about the universe. It establishes objective truths, not by wishful or magical thinking, but by repeated and verified experiments. This makes such truths true, whether or not you believe in them.}
+}
+@entry{scientificmethod,
+name = {scientific method},
+description = {It is an \gls{empiricalmethod} consisting of a set of procedures, guidelines, assumptions, and attitudes required for the organized and systematic collection, interpretation, and verification of data and the discovery of reproducible evidence, enabling laws and principles to be stated or modified. One researcher comes up with a result (from theory, hunch, \gls{observation}). This is not the truth. A scientific, emergent truth is not the result of any one \gls{experiment}. Many researchers try to verify it. If no one can prove it wrong, one can declare a consensus of \glspl{observation} and \glspl{experiment} has emerged in the scientific community.}
+}
+@entry{scikitlearn,
+name = {scikit-learn},
+description = {It is an \gls{opensourcesoftware}, package for \gls{machinelearning} that supports supervised and unsupervised learning. It also provides various tools for model fitting, \glspl{datum} preprocessing, model selection, model evaluation, and many other utilities.}
+}
+@entry{scrapy,
+name = {Scrapy},
+description = {Scrapy is a fast high-level web crawling and \gls{webscraping} framework, used to crawl websites and extract structured \glspl{datum} from their pages. It can be used for a wide range of purposes, from \glspl{datum} mining to monitoring and automated testing. (\cite{scrapy})}
+}
+@entry{seborrheickeratosis,
+name = {seborrheic keratosis},
+description = {It occurs when skin cells, keratinocytes, multiply rapidly, resulting in a non-cancerous growth. This slow-growing spot is typically raised and may have a rough texture, and can appear anywhere on your body. It is neither viral or bacterial and cannot spread. It is most common in adults over 50 years of age. See \href{https://www.yalemedicine.org/conditions/seborrheic-keratosis}{Yale Medicine---Seborrheic Karatosis}.}
+}
+@entry{specialcause,
+plural = {special causes},
+name = {special cause},
+description = {Variation due to special cause is unexpected and unusual variation. The cause can be identified.}
+}
+@entry{selfsupervisedlearning,
+name = {self supervised machine learning},
+description = {Self supervised machine learning is a \gls{machinelearning} technique that trains models to create their own labels from \gls{unlabeleddata} data. This method is also known as predictive or pretext learning. It is useful because it allows models to be trained using large amounts of \gls{unlabeleddata} data, which is often cheaper and more abundant than \gls{labeleddata}. This makes SSL a cost-effective and time-efficient way to train models, especially in fields like computer vision and \gls{naturallanguageprocessing} where \gls{labeleddata} can be scarce. Self supervised learning creates its own \enquote{supervisory signals} by manipulating the \glspl{datum} itself to generate learning tasks, effectively acting like a supervised learning approach within an unsupervised framework.}
+}
+@entry{semisupervisedlearning,
+name = {semi-supervised learning},
+description = {It is an approach to \gls{machinelearning} that combines a small amount of \gls{labeleddata} to guide the model with a large amount of \gls{unlabeleddata} \glspl{datum} during training. Semi-supervised learning falls between unsupervised learning (with no labeled \gls{trainingdataset}) and supervised learning (with only labeled \gls{trainingdataset}). It is a special instance of weak supervision.}
+}
+@entry{sentimentanalysis,
+name = {sentiment analysis},
+plural = {sentiment analyses},
+description = {TBD}
+}
+@entry{shell,
+name = {shell},
+plural = {shells},
+description = {This is a program that interprets the commands typed into a \gls{terminal}.}
+}
+@entry{shellscript,
+name = {shell script},
+plural = {shell scripts},
+description = {A shell script is a plain text file of commands that is executed on a compute terminal, also known as a shell. Linux (\cite{bash}, \cite{zsh}), Mac (\cite{zsh}), and Windows PowerShell (\cite{windowspowershell}) can easily execute shell scripts. Windows PowerShell offers similar functionality and has its own syntax for the commands.}
+}
+@entry{shewhartcontrolchart,
+name = {Shewhart control chart},
+plural={Shewhart control charts},
+description = {TBD},
+seealso={controlchart}
+}
+@entry{sicario,
+name = {sicario},
+description = {A sicario is a hired gunman or assassin, especially in Latin America.}
+}
+@entry{software,
+name = {software},
+description = {Software consists of \glspl{computerprogram} that instruct the execution of a computer. It includes design documents, specifications, and documentation.}
+}
+@entry{softwarerobot,
+name = {software robot},
+plural = {software robots},
+description = {It is a software program that automates repetitive, rule-based tasks on a computer.}
+}
+@entry{softwareframework,
+name = {software framework},
+plural = {software frameworks},
+description = {It is a collection of code for building applications. It saves time and effort by providing reusable components and functionalities. It typically consits of classes and functions, interfaces and protocols, and configuration options. }
+}
+@entry{sourcecode,
+name = {source code},
+description = {Source code is a plain text \gls{computerprogram} written in a \gls{programminglanguage}. A programmer writes the human readable source code to control the behavior of a computer.}
+}
+@entry{sourcesofvariation,
+name = {sources of variation},
+description = {These are the factors in a process that cause variation on the dependent variable. These factors may vary in a deliberate manner (fixed effects), random manner (random effects), or mixed effects (fixed and random factors)}
+}
+@entry{specification,
+plural = {specifications},
+name = {specification},
+description = {In the context of measurement system analysis, process capability, and process control, a specification is a lower limit, a target, and an upper limit.}
+}
+@entry{standarddeviation,
+plural = {standard deviations},
+name = {standard deviation},
+description = {It is the square root of the variance. $$s = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}}$$}
+}
+@entry{statistic,
+name = {statistic},
+plural = {statistics},
+description = {TBD}
+}
+@entry{statisticalclassification,
+name = {statistical classification},
+description = {TBD}
+}
+@entry{statisticalcontrol,
+name = {statistical control},
+description = {A process is said to be in a state of statistical control if the variation for both charts is stable and predictable. This means that no points fail various control chart rules, such as Nelson's rules, and no systematic patterns of variation are present. It is also called process stability.}
+}
+@entry{statisticalinference,
+name = {statistical inference},
+plural = {statistical inferences},
+description = {It is the process of using \glspl{datum} analysis to infer properties of an underlying distribution of probability. Inferential statistical analysis infers properties of a population, for example by testing hypotheses and deriving estimates. It is assumed that the observed \gls{dataset} is sampled from a larger population.}
+}
+@entry{statistician,
+name = {statistician},
+plural = {statisticians},
+description = {This individual comes to conclusions safely beyond the \glspl{datum} being analyzed. It involves a rigour and a careful approach, to prevent making unwarranted conclusions.}
+}
+@entry{statistics,
+name = {statistics},
+plural = {statistics},
+description = {TBD}
+}
+@entry{stochasticparrot,
+name = {stochastic parrot},
+plural = {stochastic parrots},
+description = {In \gls{machinelearning}, term stochastic parrot is a \gls{metaphor} to describe the theory that \glspl{largelanguagemodel}, though able to generate plausible language, do not understand the meaning of the language they process.}
+}
+@entry{sup,
+name = {standup paddle board},
+plural = {standup paddle boards},
+description = {It is a large, surfboard-like vessel that allows a person to stand upright and use a single-bladed paddle to propel themselves across the water. Standup paddle boards come in various types, including solid and inflatable models, and are used for a wide range of activities such as flatwater paddling, standup paddle board surfing, paddleboard yoga, fishing, and racing on lakes, rivers, and oceans.}
+}
+@entry{supervisedlearning,
+name = {supervised machine learning},
+description = {It is the \gls{machinelearning} task of learning a function that maps an input to an output based on example input--output pairs. The five steps of supervised learning are: 1. import the classes you plan to use, 2. instantiate the transformers, classifiers, regressors, and selectors, 3. train the model on an existing \gls{dataset}, 4. tune the \glspl{machinelearninghyperparameter}, and 5. predict the response for a new \gls{dataset}.}
+}
+@entry{svm,
+name = {support-vector machine},
+description = {A support-vector machine (SVM) is a supervised learning model with associated algorithms that analyze \glspl{datum} for classification and prediction.}
+}
+@entry{taguchilossfunction,
+name = {Taguchi Loss Function},
+description = {It is a graphical depiction of loss to describe a phenomenon affecting the value of products produced by a company. It was developed by the Japanese business statistician Genichi Taguchi.}
+}
+@entry{tautology,
+name = {tautology},
+plural = {tautologies},
+description = {It is a formula or assertion that is true in every possible interpretation. $$X = Y \text{or} X \neq Y$$ is true in every possible interpretation. ``Either the ball is green or the ball is not green'' is always true in every possible interpretation.}
+}
+@entry{taxes,
+name = {taxes},
+description = {TBD}
+}
+@entry{tensorflow,
+name = {TensorFlow},
+description = {It is an \gls{opensourcesoftware} \gls{softwareframework} for \gls{machinelearning} and \gls{artificialintelligence}. It can be used across a range of tasks but has a particular focus on training and inference of \glspl{artificialneuralnetwork}. It was developed by Google Brain, now Google DeepMind. It provides an \gls{applicationprogramminginterface} called \gls{keras}. It also described as a library for computation using data flow graphs for scalable \gls{machinelearning}.}
+}
+@entry{terminal,
+name = {terminal},
+plural = {terminals},
+description = {It is the interface that interacts with the \gls{shell}. It is the windows where one types commands and receives the output.}
+}
+@entry{tesseract,
+name = {Tesseract},
+description = {It is an optical character recognition engine (libtesseract) and a command line program (tesseract). (\cite{tesseract})}
+}
+@entry{testdataset,
+name = {test data set},
+description = {It is a \gls{dataset} that is independent of the \gls{trainingdataset} but follows the same \gls{probabilitydistribution} as the \gls{trainingdataset}. It is used to assess the performance of the \gls{endog}.}
+}
+@entry{testretesterror,
+name = {test-retest error},
+description = {It is the consistency of operators making repeated measurements of the same characteristic on the same part with the same measuring instrument. It is a measure of the common cause variation inherent in the measurement system. It also is used to describe the consistency of a single instrument in making repeated measurements of the same part.}
+}
+@entry{textclassification,
+name = {text classification},
+plural = {text classifications},
+description = {TBD}
+}
+@entry{textsummarization,
+name = {text summarization},
+plural = {text summarizations},
+description = {TBD}
+}
+@entry{topicmodel,
+name = {topical model},
+plural = {topical models},
+description = {TBD}
+}
+@entry{trainingdataset,
+name = {training data set},
+plural = {training data sets},
+description = {It is a \gls{dataset} of examples used during the learning process and is used to fit the \glspl{exog} to the \glspl{endog}.}
+}
+@entry{treatment,
+name = {treatment},
+plural = {treatments},
+description = {It is a specific combination of factors with one level from each factor. It is also called a run.}
+}
+@entry{typeierror,
+plural = {Type I errors},
+name = {type I error},
+description = {It is incorrectly rejecting a null hypothesis. It is the probability of saying something is different when in fact it is not. We find a difference that isn’t really there. It is also called alpha risk, producer's risk, and false positive.}
+}
+@entry{typeiierror,
+plural = {Type II errors},
+name = {type II error},
+description = {It is incorrectly failing to reject a null hypothesis. It is the probability of saying something is not different when in fact it is. We fail to find a difference when there is one. It is also called beta risk, consumer’s risk, and false negative. It is used to calculate the power of the test (1-beta), as well as in calculations of sample size.}
+}
+@entry{typeiiierror,
+plural = {type III errors},
+name = {type III error},
+description = {It is correctly rejecting the wrong null hypothesis.}
+}
+@entry{underfitting,
+name = {underfitting},
+description = {It occurs when a mathematical model cannot adequately capture the underlying structure of the \glspl{datum}. An under-fitted model is a model where some parameters or terms that would appear in a correctly specified model are missing. Under-fitting would occur, for example, when fitting a linear model to non-linear \glspl{datum}. Such a model will tend to have poor predictive performance.}
+}
+@entry{unimodal,
+name = {unimodal training},
+description = {Unimodal training refers to the process of training a \gls{machinelearning} model using only one type of \glspl{datum} (modality), such as text, images, or audio, as opposed to \gls{multimodal} which combines multiple \glspl{datum} types simultaneously; essentially, a unimodal model focuses on learning patterns from a single \glspl{datum} source to make predictions.}
+}
+@entry{unlabeleddata,
+name = {unlabeled data},
+description = {Unlabeled \glspl{datum} is raw \glspl{datum} that doesn't have any explicit tags or categories. It's a collection of samples of items, such as images, videos, articles, or social media posts, that are not labeled or explained.}
+}
+@entry{unsupervisedlearning,
+name = {unsupervised machine learning},
+description = {Unsupervised machine learning is a type of \gls{machinelearning} that uses algorithms to analyze \gls{unlabeleddata} \glspl{datum} and discover patterns without human intervention. In unsupervised learning, a model is given input \glspl{datum} and is allowed to identify patterns and relationships on its own without any explicit labels or goals.}
+}
+@entry{urllib,
+name = {urllib},
+description = {It is a package that collects several modules for working with URLs. (\cite{urllib})}
+}
+@entry{usecase,
+name = {use case},
+plural = {use cases},
+description = {It is a usage scenario for a piece of software. It suggests where a piece of software may be useful.}
+}
+@entry{validationdataset,
+name = {validation data set},
+plural = {validation data sets},
+description = {It is a \gls{dataset} of examples used during the learning process to tune the \glspl{machinelearninghyperparameter} of a model.}
+}
+@entry{variance,
+name = {variance},
+plural = {variances},
+description = {It is a measure of \gls{dispersion}, how far a set of numbers is spread out from their \gls{averagestatistic}. It is the expectation of the squared deviation of a random variable from its population \gls{averagestatistic} or sample \gls{averagestatistic}. $$s^2 = \frac{\sum\limits_{i=1}^{n} \left(X_i - \overline{X}\right)^2}{n - 1}$$}
+}
+@entry{virtualassistant,
+name = {virtual assistant},
+plural = {virtual assistants},
+description = {TBD}
+}
+@entry{virtualhuman,
+name = {virtual human},
+description = {It is a computer generated human like figure that can be used for various purposes such as: customer service, virtual assistance, or entertainment.}
+}
+@entry{voiceprint,
+name = {voiceprint},
+plural = {voiceprints},
+description = {A voiceprint is an individually distinctive pattern of certain voice characteristics that is spectrographically produced.}
+}
+@entry{webscraping,
+name = {web scraping},
+description = {It is the practice of gathering \glspl{datum} through any means other than a program interacting with an API (or, obviously, through a human using a web browser). This is most commonly accomplished by writing an automated program that queries a web server, requests \glspl{datum} (usually in the form of HTML and other files that compose web pages), and then parses that \glspl{datum} to extract needed information. (\cite{mitchell_ryan_web_scraping_with_python})}
+}
+@entry{windowspowerbi,
+name = {Power BI},
+description = {It is a collection of software services, apps, and connectors designed to transform \glspl{datum} into clear and actionable insights. It falls under the umbrella of Business Intelligence (BI) tools, which help businesses analyze \glspl{datum} to make informed decisions. (\cite{windowspowerbi})}
+}
+@entry{windowspowershell,
+name = {Windows PowerShell},
+description = {It is a powerful task automation and configuration management framework designed specifically for the Windows operating system. It combines the features of a command-line shell with a scripting language, offering a versatile environment for system administrators and power users. (\cite{windowspowershell})}
+}
+@entry{windowstaskscheduler,
+name = {Windows Task Scheduler},
+description = {is a built-in utility that allows you to automate the execution of programs, scripts, or various tasks at specific times or intervals on a Windows computer. (\cite{windowstaskscheduler})}
+}
+@entry{withinoperatorerror,
+name = {within-operator error},
+description = {It is the variation of measurements made by one operator on all parts}
+}
+@entry{withinparterror,
+name = {within-part error},
+plural = {within-part errors},
+description = {It is the variation of measurments within a sample for a single part, over time. Several measurements are taken in different locations on a part and this is repeated at specific time intervals.}
+}
+@entry{withinsubgrouperror,
+name = {within-subgroup error},
+description = {It is the variation within a sample of parts. If the sample is carefully chosen, this variation is the background error of a process. It is shown on the \gls{movingrangechart} or the \gls{rangechart}. The \gls{averagerangestatistic} is calculated to estimate the overall error.}
+}
+@entry{woke,
+name = {woke},
+description = {TBD}
+}
+@entry{pythonnamespace,
+name = {Python namespace},
+plural = {Python namespaces},
+description = {It is the place where a variable is stored. Namespaces are implemented as dictionaries. There are local, global, and built-in namespaces as well as nested namespaces in objects (in methods). Namespaces support modularity by preventing naming conflicts. For instance, the functions builtins.open and os.open() are distinguished by their namespaces. Namespaces also aid readability and maintainability by making it clear which module implements a function. For instance, writing random.seed() or itertools.islice() makes it clear that those functions are implemented by the random and itertools modules, respectively.}
+}
+@entry{cybersecurity,
+name = {cybersecurity},
+description = {It is the protection of computer systems and networks from threats that may result in unauthorized information disclosure, theft of or damaage to hardware, software, and \glspl{datum}, and disruption or misdirection of the services they provide.}
+}

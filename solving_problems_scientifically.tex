@@ -1,0 +1,185 @@
+\documentclass[10pt, letterpaper, twoside]{book}
+\usepackage{mystyle}
+
+% --- Initialize the Book Index ---
+\usepackage{makeidx}
+\makeindex
+
+% --- METADATA (Set once here, updates the entire book) ---
+\newcommand{\authorname}{Gilles Pilon, P.Eng.}
+\title{Solving Problems Scientifically}
+\author{\authorname} % Handles any standard LaTeX packages that expect \author
+\date{\today}
+
+% --- Compilation Speed Hack ---
+% \includeonly{chapters/put_chapter_name_here}
+
+\begin{document}
+
+\raggedbottom
+
+% --- FRONTMATTER: Title Page & Structure ---
+\frontmatter
+
+% --- Force all automatically generated blank pages to show page numbers ---
+\makeatletter
+\renewcommand{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+    \thispagestyle{plain}% <--- Tells LaTeX to use the plain style (with page numbers) on empty spacer pages
+    \hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% --- Custom Modern Title Page ---
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{2.5in}
+
+    % Main Title (Dynamic)
+    \makeatletter
+    {\fontsize{32pt}{38pt}\selectfont \textbf{\@title}} \\[0.5cm]
+    \makeatother
+
+    % Subtitle or Description
+    {\fontsize{14pt}{18pt}\selectfont \textcolor{gray}{A Comprehensive Technical Framework}} \\
+
+    \vspace{1.5cm}
+    \rule{\textwidth}{1.5pt}
+    \vspace{2cm}
+
+    % Author (Using clean, reliable macro)
+    {\fontsize{18pt}{22pt}\selectfont \textbf{\authorname}} \\
+
+    \vfill
+
+    % Date / Version
+    % {\fontsize{11pt}{14pt}\selectfont \today}
+
+    \vfill
+\end{center}
+\newpage
+
+% --- Copyright Page Placeholder (Physical Page 2 - Left Hand/Even) ---
+\pagestyle{plain}
+\thispagestyle{plain}
+\vspace*{\fill}
+\noindent Type set in Noto Sans. Layout with \LaTeX. Python code and dawgdad analysis package.\\
+\noindent \copyright\ \the\year\ \authorname. All rights reserved.\\
+\noindent Version \input{version.tex}
+\vspace*{1.5cm}
+\newpage
+
+% --- Dedication Page (Physical Page 3 - Right Hand/Odd) ---
+\thispagestyle{plain}
+\vspace*{2.5in}
+\begin{center}
+    \itshape To TBD
+\end{center}
+\newpage
+
+% --- Empty Page After Dedication (Physical Page 4 - Left Hand/Even) ---
+\thispagestyle{plain} % <-- Changed to plain so 'iv' explicitly prints
+\mbox{}
+\newpage
+
+% --- Epigraph (Quote) Page (Physical Page 5 - Right Hand/Odd) ---
+\thispagestyle{plain}
+\vspace*{2.5in}
+\begin{flushright}
+    \begin{minipage}{0.6\textwidth}
+        \itshape
+        "An expert is a person who has made all the mistakes that can be made in a very narrow field."
+        \vspace*{0.2cm}
+        \hfill --- Niels Bohr
+    \end{minipage}
+\end{flushright}
+\newpage
+
+% --- Empty Page After Epigraph (Physical Page 6 - Left Hand/Even) ---
+\thispagestyle{plain} % <-- Changed to plain so 'vi' explicitly prints
+\mbox{}
+\newpage              % Passes control straight to page 7!
+
+% --- Table of Contents Layout ---
+\clearpage
+\phantomsection
+\tableofcontents
+
+% --- All Frontmatter Text Chapters (Now appearing completely AFTER the TOC) ---
+% --- Acknowledgements Section (Physical Page 7 - Right Hand/Odd) ---
+\include{chapters/acknowledgements}
+
+% --- Include the Preface ---
+\include{chapters/preface}
+
+% --- Include the External Note to the Reader ---
+\include{chapters/note_to_reader}
+
+% --- Foreword & Preface Placeholders---
+% \chapter{Foreword}
+% This is a placeholder for the Foreword, usually written by someone else.
+
+\clearpage
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\clearpage
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+\listofmyequations
+\addcontentsline{toc}{chapter}{List of Equations}
+% \listofmytheorems
+% \listofmycorollaries
+
+% --- MAINMATTER: Resets page counter to 1, uses Arabic numbers, enables chapter numbering ---
+\mainmatter
+
+% --- Include active writing tracks ---
+\include{chapters/sandbox}
+\include{chapters/introduction}
+\include{chapters/scientific_method}
+
+% 3. Appendices Block
+\appendix
+\include{chapters/appendix_python}
+\include{chapters/appendix_dawgdad}
+
+% --- BACKMATTER: Keeps Arabic page numbers, turns off chapter numbers ---
+\backmatter
+
+% --- Glossary ---
+\printunsrtglossary[style={indexgroup}]
+
+% --- Endnotes (Added right here) ---
+\include{chapters/endnotes}
+
+% --- References / Bibliography ---
+\chapter{References}
+% \nocite{*}
+{
+\small % <-- Forces the bibliography entries to be clean and compact
+\printbibliography[heading=none]
+}
+\normalsize
+
+% --- About the Author ---
+\chapter{About the Author}
+\thispagestyle{plain}
+
+\authorname, is a Senior Machine Learning Engineer and Data Scientist with an extensive background in engineering frameworks and advanced systems development. A graduate of McMaster University in Metallurgical Engineering, he specializes in high-performance computing architectures, custom automation pipelines, and robust software infrastructure.
+
+When not structuring complex codebases or optimizing technical documentation frameworks, he is an avid cyclist focused on performance analytics and outdoor endurance. He lives with his family, continuing to build open-source tools and data utilities.
+
+% --- Dynamic Book Index ---
+\cleardoublepage
+\makeatletter
+% Force a hard target right inside the multi-column index page setup
+\let\old@makeschapterhead\@makeschapterhead
+\renewcommand{\@makeschapterhead}[1]{%
+  \phantomsection% Sets the hyperlink target at absolute zero on the new page
+  \addcontentsline{toc}{chapter}{\indexname}% Adds it cleanly to the TOC
+  \old@makeschapterhead{#1}% Draws the actual title text
+}
+\makeatother
+\printindex
+
+\end{document}
