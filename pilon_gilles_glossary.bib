@@ -81,10 +81,6 @@ description = {Robotic process automation (RPA) uses software robots to handle r
 name = {identity and access management},
 description = {Identity and access management (IAM) is a framework of policies and technologies to ensure that the right users have the appropriate access to technology resources. It identifies, authenticates, and controls access for individuals who will be using information technology resources, hardware, and access to applications.},
 }
-@entry{pam,
-name = {privileged access management},
-description = {Privileged access management (PAM) is a type of \gls{iam} and \gls{cybersecurity} technology that focuses on the control, monitoring, and protection of privileged accounts in an organization. Accounts with privileged access grant users enhanced permissions, making them prime targets for attackers due to their extensive access to vital systems and sensitive \glspl{datum}.}
-}
 @entry{xdr,
 name = {extended detection and response},
 description = {Extended detection and response (XDR) provides security incident detection and automated response capabilities for security infrastructure. It integrates threat intelligence and telemetry \glspl{datum} from multiple sources with security analytics to provide conceptualization and correlation of security alerts.}
@@ -105,7 +101,7 @@ description = {Instead of dealing with an idea, one tries to denigrate the messe
 }
 @entry{additive,
     name = {additive},
-    description = {An additive model of \glspl{exog} imp;lies that the observed effects are due to main effects only and no interactions (\cite[][218]{boxhunterhunter1978}).}
+    description = {An additive model of \glspl{exog} imp;lies that the observed effects are due to main effects only and no interactions \cite[][218]{boxhunterhunter1978}.}
 }
 @entry{amortization,
 name = {amortization},
@@ -115,6 +111,10 @@ description = { Amortization spreads out the cost of an intangible asses over it
 name = {application programming interface},
 plural = {application programming interfaces},
 description = {It is a way for two or more \glspl{computerprogram} to communicate with each other. It is a type of software interface, offering a service to other pieces of software.}
+}
+@entry{archlinux,
+name = {Arch Linux},
+description = {Arch Linux is a \gls{opensourcesoftware}, rolling release Linux distribution. (\href{https://en.wikipedia.org/wiki/Arch_Linux}{Arch Linux})}
 }
 @entry{argument,
 name = {argument},
@@ -180,7 +180,7 @@ description = {It is the \gls{averagestatistic} of several \glspl{rangestatistic
 @entry{beautifulsoup,
 name = {Beautiful Soup},
 description = {It parses HTML and XML documents to create a tree-like representation
-of the document structure and extract \glspl{datum}. (\cite{beautifulsoup})}
+of the document structure and extract \glspl{datum}. \cite{beautifulsoup}}
 }
 @entry{betweenoperatorerror,
 name = {between-operator error},
@@ -440,7 +440,7 @@ description = {TBD}
 @entry{effect,
 name = {effect},
 plural = {effects},
-description = {It is the change in response caused by a change in the level of a factor (\cite[][114]{hicks1982}).}
+description = {It is the change in response caused by a change in the level of a factor \cite[][114]{hicks1982}.}
 }
 @entry{embeddedsystem,
 name = {embedded system},
@@ -636,7 +636,7 @@ description = {A large language model (LLM) is a type of artificial intelligence
 }
 @entry{latex,
 name = {LaTeX},
-description = {LaTex, pronounced \enquote{lay-tech,} is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software (\cite{oetiker_serwin_partl_hyna_schlegl}).}
+description = {LaTex, pronounced \enquote{lay-tech,} is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software \cite{oetiker_serwin_partl_hyna_schlegl}.}
 }
 @entry{linearregression,
 name = {linear regression},
@@ -778,6 +778,18 @@ description = {It is a \gls{datum} point that differs significantly from other \
 name = {overfitting},
 description = {It is the production of an analysis that corresponds too closely or exactly to a particular set of \glspl{datum}, and may therefore fail to fit to additional \glspl{datum} or predict future \glspl{observation} reliably. An overfitted model is a mathematical model that contains more parameters than can be justified by the \glspl{datum}. The essence of overfitting is to have unknowingly extracted some of the residual variation (that is, the noise) as if that variation represented underlying model structure. The possibility of over-fitting exists because the criterion used for selecting the model is not the same as the criterion used to judge the suitability of a model. For example, a model might be selected by maximizing its performance on some set of \gls{trainingdataset}, and yet its suitability might be determined by its ability to perform well on unseen data; then over-fitting occurs when a model begins to \enquote{memorize} \gls{trainingdataset} rather than \enquote{learning} to generalize from a trend. As an extreme example, if the number of parameters is the same as or greater than the number of \glspl{observation}, then a model can perfectly predict the \gls{trainingdataset} simply by memorizing the \glspl{datum} in its entirety. Such a model, though, will typically fail severely when making predictions.}
 }
+@entry{packagemanager,
+name = {package manager},
+description = {A package manager is software that handles package installation, removal, and downgrades of software for the host system. (\href{https://en.wikipedia.org/wiki/Package_manager}{Package manager})}
+}
+@entry{pacman,
+name = {pacman},
+description = {Pacman is an \gls{archlinux} \gls{packagemanager} that handles package installation, removal, downgrades, and automatic dependency resolution. (\href{https://en.wikipedia.org/wiki/Arch_Linux}{Pacman})}
+}
+@entry{pam,
+name = {privileged access management},
+description = {Privileged access management (PAM) is a type of \gls{iam} and \gls{cybersecurity} technology that focuses on the control, monitoring, and protection of privileged accounts in an organization. Accounts with privileged access grant users enhanced permissions, making them prime targets for attackers due to their extensive access to vital systems and sensitive \glspl{datum}.}
+}
 @entry{pandas,
 name = {pandas},
 description = {It is an open source, BSD-licensed library providing high-performance, easy-to-use \glspl{datum} structures and \glspl{datum} analysis tools for the \Gls{python} \gls{programminglanguage}. (\cite{pandas})}
@@ -856,7 +868,7 @@ description = {Python Tesseract is a wrapper for \Gls{tesseract}. It is also use
 }
 @entry{python,
 name = {Python},
-description = {Python is an easy to learn, powerful \gls{programminglanguage}. It has efficient high-level \glspl{datum} structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms. (\cite{python})}
+description = {Python is an easy to learn, powerful \gls{programminglanguage}. It has efficient high-level \glspl{datum} structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms. \cite{python}}
 }
 @entry{pythonclass,
 name = {Python class},
@@ -1010,7 +1022,7 @@ description = {This is a program that interprets the commands typed into a \gls{
 @entry{shellscript,
 name = {shell script},
 plural = {shell scripts},
-description = {A shell script is a plain text file of commands that is executed on a compute terminal, also known as a shell. Linux (\cite{bash}, \cite{zsh}), Mac (\cite{zsh}), and Windows PowerShell (\cite{spowershell}) can easily execute shell scripts. Windows PowerShell offers similar functionality and has its own syntax for the commands.}
+description = {A shell script is a plain text file of commands that is executed on a compute terminal, also known as a shell. Linux \cite{bash}, cite{zsh}, Mac \cite{zsh}, and Windows PowerShell \cite{spowershell} can easily execute shell scripts. Windows PowerShell offers similar functionality and has its own syntax for the commands.}
 }
 @entry{shewhartcontrolchart,
 name = {Shewhart control chart},
@@ -1231,13 +1243,13 @@ description = {It is the practice of gathering \glspl{datum} through any means o
 name = {Power BI},
 description = {It is a collection of software services, apps, and connectors designed to transform \glspl{datum} into clear and actionable insights. It falls under the umbrella of Business Intelligence (BI) tools, which help businesses analyze \glspl{datum} to make informed decisions. (\cite{windowspowerbi})}
 }
-@entry{spowershell,
-name = {Windows PowerShell},
-description = {It is a powerful task automation and configuration management framework designed specifically for the Windows operating system. It combines the features of a command-line shell with a scripting language, offering a versatile environment for system administrators and power users. (\cite{spowershell})}
+@entry{powershell,
+  name = {PowerShell},
+  description = {PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and a scripting language.}
 }
 @entry{windowstaskscheduler,
-name = {Windows Task Scheduler},
-description = {is a built-in utility that allows you to automate the execution of programs, scripts, or various tasks at specific times or intervals on a Windows computer. (\cite{windowstaskscheduler})}
+  name = {Windows Task Scheduler},
+  description = {Windows Task Scheduler is a built-in utility that allows you to automate the execution of programs, scripts, or various tasks at specific times or intervals on a Windows computer.}
 }
 @entry{withinoperatorerror,
 name = {within-operator error},
