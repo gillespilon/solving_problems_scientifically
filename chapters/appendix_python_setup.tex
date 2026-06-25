@@ -1,9 +1,84 @@
-% --- Appendix Python
-\chapter{Appendix---Python}
-\label{app:python}
+% --- Appendix: Python installation environment ---
+\chapter{Python environment setup}
+\label{app:python_setup}
 
-This appendix will show how to install and use Python.
+\section{Install Python for Arch Linux}
 
-\section{Install Python}\label{sec:install_python}
+On Arch Linux, Python is treated as a core system component. Do not install manual binaries from the website; instead, use the native \gls{packagemanager}, \gls{pacman}, to ensure rolling-release dependency tracking remains unified.
 
-TBD
+\subsection{Procedural steps}
+\begin{enumerate}
+    \item Synchronize the package databases and upgrade the system infrastructure.
+    \item Explicitly install the core Python package.
+\end{enumerate}
+
+\subsection{Install Python with pacman}
+Identify as shell commands:
+\begin{zshbox}{pacman}
+sudo pacman -Syu python
+\end{zshbox}
+
+\subsection{Verify the version}
+Validate the native binary deployment:
+\begin{zshbox}{Python version}
+python --version
+\end{zshbox}
+
+To exit the interactive environment, execute \textbf{exit()}.
+
+\subsection{Verify the environment}
+
+Regardless of your underlying host operating system, a successful deployment should allow entry into the interactive Python Read-Eval-Print Loop (REPL).
+
+\begin{zshbox}{Run Python}
+python
+\end{zshbox}
+
+Expected terminal output state:
+\begin{zshbox}{Python version}
+Python 3.14.6 (main, Jun 15 2026, 11:36:54) [GCC 16.1.1 20260430] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+\end{zshbox}
+
+To exit the interactive environment, execute \textbf{exit()}.
+
+\section{Install Python for Windows}
+
+To establish a clean Python environment on Microsoft Windows, utilize the official installer provided by the Python Software Foundation.
+
+\subsection{Procedural steps}
+\begin{enumerate}
+    \item Navigate to the official download architecture at \href{https://www.python.org/downloads/windows/}{python.org}.
+    \item Download the latest stable \textbf{Windows installer (64-bit)}.
+    \item Launch the executable installer.
+    \item \textbf{Critical Step:} At the bottom of the installation wizard window, check the box labeled \textbf{"Add python.exe to PATH"}. Failure to do this will prevent execution from standard terminals.
+    \item Select \textbf{"Install Now"}.
+    \item Once complete, verify the environmental path configuration by opening \gls{powershell} or the Command Prompt and executing the verification command.
+\end{enumerate}
+
+\subsection{Verify the version}
+Identify as shell commands:
+\begin{zshbox}{Python version}
+python --version
+\end{zshbox}
+
+To exit the interactive environment, execute \textbf{exit()}.
+
+\section{Install Python for macOS}
+
+While macOS includes a system stub for Python, development workflows require a dedicated, unencumbered framework binaries from the official source.
+
+\subsection{Procedural steps}
+\begin{enumerate}
+    \item Navigate to \href{https://www.python.org/downloads/macos/}{python.org}.
+    \item Download the \textbf{macOS universal installer} package (\texttt{.pkg}).
+    \item Run the installer package and follow the standard system prompts.
+    \item The installer automatically handles path updates for standard shells.
+\end{enumerate}
+
+\subsection{Verify the version}
+Open your terminal (Zsh) and execute:
+\begin{zshbox}{Python version}
+python3 --version
+\end{zshbox}
