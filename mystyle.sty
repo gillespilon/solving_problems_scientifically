@@ -1,7 +1,7 @@
 \ProvidesPackage{mystyle}
 
 % --- Allocate extra write streams for intensive packages (minted/glossaries/enotez) ---
-\usepackage{morewrites}
+% \usepackage{morewrites}
 
 % --- Allow tables to split across pages ---
 \usepackage{longtable}
@@ -27,6 +27,10 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
+
+% Load the core indexing package
+\usepackage{makeidx}
+\makeindex
 
 % --- CORE LAYOUT & IMAGE PACKAGES ---
 \usepackage{float}
@@ -133,21 +137,42 @@
 
 % --- Hyperlinks Configuration (Moved up so Glossaries can hook into it) ---
 \usepackage[unicode]{hyperref}
+
+% Define a professional deep royal magenta using a HEX value
+\definecolor{DeepRoyalMagenta}{HTML}{8B008B}
+
+% Define the rich input color, neon pink
+\definecolor{UserInput}{HTML}{FF13F0}
+
+% Create a custom command for literal text to enter
+\newcommand{\userinput}[1]{\texttt{\textbf{\textcolor{UserInput}{#1}}}}
+
+% Define the rich item selection color, Caribbean mint
+\definecolor{SelectItem}{HTML}{00DF89}
+
+% Create a custom command for literal text to enter
+\newcommand{\selectitem}[1]{\texttt{\textbf{\textcolor{SelectItem}{#1}}}}
+
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    urlcolor=orange,
-    citecolor=red
+    linkcolor=blue,            % Internal targets like sections, equations, TOC stay blue
+    urlcolor=orange,           % Web URLs stay orange
+    citecolor=red              % Citations stay red
 }
 
 % --- Glossaries Setup (Loaded AFTER hyperref so hyperlinks generate) ---
-\usepackage[toc, nopostdot, numberedsection, record=hybrid, shortcuts=ac, abbreviations]{glossaries-extra}
-\makeglossaries
+\usepackage[toc, nopostdot, numberedsection, record, shortcuts=ac, abbreviations]{glossaries-extra}
+
+% Hook into glossaries-extra to explicitly force the forest green HEX on all glossary links
+\renewcommand*{\glstextformat}[1]{\textcolor{\glslinkcolor}{#1}}
+\newcommand*{\glslinkcolor}{DeepRoyalMagenta}
+
 \GlsXtrLoadResources[
     src={pilon_gilles_glossary.bib},
     sort=letter-nocase,
-    selection={recorded and deps}
+    selection={all}
 ]
+
 % --- THEOREMS & CUSTOM LISTS CONFIGURATION ---
 \makeatletter % Enforce internal macro reading safely
 
