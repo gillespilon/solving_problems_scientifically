@@ -1,10 +1,6 @@
 \documentclass[10pt, letterpaper, twoside]{book}
 \usepackage{mystyle}
 
-% --- Initialize the Book Index ---
-\usepackage{makeidx}
-\makeindex
-
 % --- METADATA (Set once here, updates the entire book) ---
 \newcommand{\authorname}{Gilles Pilon, P.Eng.}
 \title{Solving Problems Scientifically}
@@ -134,7 +130,7 @@
 \mainmatter
 
 % --- Include active writing tracks ---
-% \include{chapters/sandbox}
+\include{chapters/sandbox}
 \include{chapters/introduction}
 \include{chapters/scientific_method}
 
@@ -149,37 +145,44 @@
 % --- Glossary ---
 \printunsrtglossary[style={indexgroup}]
 
-% --- Endnotes (Added right here) ---
-\include{chapters/endnotes}
+% --- Endnotes ---
+% Using \input instead of \include gives us precise layout control at the boundary
+\input{chapters/endnotes}
+
+% Force a native two-sided boundary break right after the endnotes text finishes
+\cleardoublepage
 
 % --- References / Bibliography ---
-\chapter{References}
-% \nocite{*}
+\cleardoublepage
+\chapter*{References}
+\addcontentsline{toc}{chapter}{References}
 {
-\small % <-- Forces the bibliography entries to be clean and compact
+\small
 \printbibliography[heading=none]
 }
 \normalsize
 
-% --- About the Author ---
-\chapter{About the Author}
-\thispagestyle{plain}
 
-\authorname, is a Senior Machine Learning Engineer and Data Scientist with an extensive background in engineering frameworks and advanced systems development. A graduate of McMaster University in Metallurgical Engineering, he specializes in high-performance computing architectures, custom automation pipelines, and robust software infrastructure.
-
-When not structuring complex codebases or optimizing technical documentation frameworks, he is an avid cyclist focused on performance analytics and outdoor endurance. He lives with his family, continuing to build open-source tools and data utilities.
-
-% --- Dynamic Book Index ---
+% --- SINGLE CLEAN TRANSITION TO THE INDEX ---
 \cleardoublepage
-\makeatletter
-% Force a hard target right inside the multi-column index page setup
-\let\old@makeschapterhead\@makeschapterhead
-\renewcommand{\@makeschapterhead}[1]{%
-  \phantomsection% Sets the hyperlink target at absolute zero on the new page
-  \addcontentsline{toc}{chapter}{\indexname}% Adds it cleanly to the TOC
-  \old@makeschapterhead{#1}% Draws the actual title text
-}
-\makeatother
-\printindex
+\addtocontents{toc}{\protect\contentsline{chapter}{Index}{\thepage}{page.\thepage}}
 
+% Finetune the top vertical padding to match your other chapters perfectly
+\bgroup
+\let\oldtwocolumn\twocolumn
+\renewcommand{\twocolumn}[1][]{\oldtwocolumn[\vspace*{24pt}#1]}
+\printindex
+\egroup
+
+
+% --- ABOUT THE AUTHOR (External Chapter) ---
+\cleardoublepage
+\nopagebreak
+\addcontentsline{toc}{chapter}{About the Author}
+\nopagebreak
+\input{chapters/abouttheauthor}
+
+
+% --- FINAL DOCUMENT CLOSURE ---
+\cleardoublepage
 \end{document}
