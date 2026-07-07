@@ -142,7 +142,10 @@
 % --- BACKMATTER: Keeps Arabic page numbers, turns off chapter numbers ---
 \backmatter
 
-% --- Glossary ---
+% --- Glossary (all terms in glossary file) ---
+% \printunsrtglossary[style={indexgroup}]
+
+% --- Glossary (Only referenced terms) ---
 \printunsrtglossary[style={indexgroup}]
 
 % --- Endnotes ---
@@ -154,29 +157,30 @@
 
 % --- References / Bibliography ---
 \cleardoublepage
-\chapter*{References}
-\addcontentsline{toc}{chapter}{References}
+\phantomsection % <-- Target drops at the top of the fresh page
+\addcontentsline{toc}{chapter}{References} % <-- Logs the target to the TOC
+\chapter*{References} % <-- Prints the visible heading right below the target
 {
 \small
 \printbibliography[heading=none]
 }
 \normalsize
 
-
 % --- SINGLE CLEAN TRANSITION TO THE INDEX ---
 \cleardoublepage
+\phantomsection % <-- Anchors the hyperref target exactly to the top of the Index canvas
 \addtocontents{toc}{\protect\contentsline{chapter}{Index}{\thepage}{page.\thepage}}
 
 % Finetune the top vertical padding to match your other chapters perfectly
 \bgroup
 \let\oldtwocolumn\twocolumn
-\renewcommand{\twocolumn}[1][]{\oldtwocolumn[\vspace*{24pt}#1]}
+\renewcommand{\twocolumn}[1][]{\oldtwocolumn[\vspace*{25pt}#1]}
 \printindex
 \egroup
 
-
 % --- ABOUT THE AUTHOR (External Chapter) ---
 \cleardoublepage
+\phantomsection % <-- Resets the hyperref target grid to the top of this fresh page
 \nopagebreak
 \addcontentsline{toc}{chapter}{About the Author}
 \nopagebreak
