@@ -141,17 +141,23 @@
 % Define a professional deep royal magenta using a HEX value
 \definecolor{DeepRoyalMagenta}{HTML}{8B008B}
 
-% Define the rich input color, neon pink
+% Define the input color, neon pink
 \definecolor{UserInput}{HTML}{FF13F0}
 
 % Create a custom command for literal text to enter
 \newcommand{\userinput}[1]{\texttt{\textbf{\textcolor{UserInput}{#1}}}}
 
-% Define the rich item selection color, Caribbean mint
+% Define the item selection color, Caribbean mint
 \definecolor{SelectItem}{HTML}{00DF89}
 
 % Create a custom command for literal text to enter
 \newcommand{\selectitem}[1]{\texttt{\textbf{\textcolor{SelectItem}{#1}}}}
+
+% Define the keyboard key or icon color, brick red
+\definecolor{PressKey}{HTML}{B6321C}
+
+% Create a custom command for literal text to enter
+\newcommand{\presskey}[1]{\texttt{\textbf{\textcolor{PressKey}{#1}}}}
 
 \hypersetup{
     colorlinks=true,
@@ -162,6 +168,7 @@
 
 % --- Glossaries Setup (Loaded AFTER hyperref so hyperlinks generate) ---
 \usepackage[toc, nopostdot, numberedsection, record, shortcuts=ac, abbreviations]{glossaries-extra}
+% \GlsXtrEnablePreLocationLists % <-- Commented out / deleted
 
 % Hook into glossaries-extra to explicitly force the forest green HEX on all glossary links
 \renewcommand*{\glstextformat}[1]{\textcolor{\glslinkcolor}{#1}}
@@ -169,8 +176,7 @@
 
 \GlsXtrLoadResources[
     src={pilon_gilles_glossary.bib},
-    sort=letter-nocase,
-    selection={all}
+    sort=letter-nocase
 ]
 
 % --- THEOREMS & CUSTOM LISTS CONFIGURATION ---
