@@ -1,4 +1,5 @@
 % Encoding: UTF-8
+
 @entry{aad,
 name = {average absolute deviation},
 description = {The average absolute deviation (AAD) measure does not square the distance from the average, so it is less affected by extreme \glspl{observation} than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
@@ -135,11 +136,6 @@ description = {It is the \gls{averagestatistic} of several \glspl{rangestatistic
 plural = {averages},
 name = {average},
 description = {It is the sum of a set of values divided by the count of values. It is a type of \gls{locationstatistic}. $$\overline{Y} = \frac{\sum\limits_{i=1}^{n} X_i}{n}$$}
-}
-
-@entry{bsd,
-name = {bead seat diameter},
-description = {It is the inner rim diameter (mm) where the tire bead sits.}
 }
 
 @entry{beautifulsoup,
@@ -356,8 +352,20 @@ plural = {data engineers},
 description = {A data engineer prepares \glspl{datum} for analytical and operational uses, that is, \gls{etl}. This individual is capable of preparing \glspl{datum} at scale from multiple sources and making it available to use in a production environment.}
 }
 
+@entry{datalake,
+name = {data lake},
+plural = {data lakes},
+description = {A data lake is a system or repository of data stored in its natural, raw format, usually object blobs or files. A data lake is usually a single store of data including raw copies of source system data, sensor data, social data etc., and transformed data used for tasks such as reporting, visualization, advanced analytics, and machine learning. A data lake can include structured data from relational databases (rows and columns), semi-structured data (CSV, logs, XML, JSON), unstructured data (emails, documents, PDFs), and binary data (images, audio, video). A data lake can be established on premises (within an organization’s data centers) or in \gls{cloudcomputing}.}
+}
+
+@entry{datalakehouse,
+name = {data lake house},
+plural = {data lake houses},
+description = {It is a hybrid approach that can ingest a variety of raw data formats like a \gls{datalake}, while also providing ACID transactions and enforced data quality like a \gls{datawarehouse}.}
+}
+
 @entry{dataleakage,
-name = {dataleakage},
+name = {data leakage},
 description = {In \gls{machinelearning}, it is learning something from the \gls{testdataset} that one is not allowed to know.}
 }
 
@@ -382,6 +390,12 @@ description = {A data scientist applies the methodologies and tools of \gls{data
 name = {data set},
 plural = {data sets},
 description = {A data set is a collection of \glspl{datum}. In the case of tabular \glspl{datum}, a data set corresponds to one or more database tables, where every column of a table represents a particular variable, and each row corresponds to a given record of the data set in question. The data set lists values for each of the variables, such as for example height and weight of an object, for each member of the data set. Data sets can also consist of a collection of documents or files.}
+}
+
+@entry{datawarehouse,
+name = {data warehouse},
+plural = {data warehouses},
+description = {It is a system used for reporting and data analysis and is a core component of business intelligence. Data warehouses are central repositories of data integrated from disparate sources. They store current and historical data organized in a way that is optimized for data analysis, generation of reports, and developing insights across the integrated data.}
 }
 
 @entry{datum,
@@ -639,12 +653,12 @@ description = {In \gls{statisticalclassification} the generative approach comput
 
 @entry{github,
 name = {GitHub},
-description = {It is a cloud-based platform where you can store, share, and work together with others to write code.}
+description = {It is a \gls{cloudcomputing} platform where you can store, share, and work together with others to write code.}
 }
 
 @entry{gitlab,
 name = {GitLab},
-description = {It is a cloud-based platform where you can store, share, and work together with others to write code.}
+description = {It is a \gls{cloudcomputing} platform where you can store, share, and work together with others to write code.}
 }
 
 @entry{gui,
