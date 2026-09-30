@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, pdfborder={0 0 0}]{hyperref}
+
+% Load biblatex and point it to your bibliography file
+\usepackage[backend=biber, style=authoryear]{biblatex}
+\addbibresource{pilon_gilles_bibliography.bib}
+
+% Load glossaries-extra
+\usepackage[record, acronym]{glossaries-extra}
+
+\GlsXtrLoadResources[
+  src={pilon_gilles_glossary},
+  selection={all},
+  counter={page}
+]
+
+\begin{document}
+
+\printunsrtglossary[
+  title={Glossary}
+]
+
+% Print the bibliography section at the end
+\newpage
+\printbibliography[title={References}]
+
+\end{document}
