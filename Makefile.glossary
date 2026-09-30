@@ -1,0 +1,13 @@
+# Define your project base name here
+TARGET = glossary
+
+all:
+	pdflatex $(TARGET)
+	bib2gls $(TARGET)
+	biber $(TARGET)
+	pdflatex $(TARGET)
+	bib2gls $(TARGET)
+	pdflatex $(TARGET)
+
+clean:
+	rm -f $(TARGET).aux $(TARGET).log $(TARGET).glstex $(TARGET).glg $(TARGET).toc $(TARGET).pdf $(TARGET).bbl $(TARGET).blg $(TARGET).bcf $(TARGET).run.xml
