@@ -1,8 +1,18 @@
 z Encoding: UTF-8
 
-@entry{aad,
-name = {average absolute deviation},
-description = {The average absolute deviation (AAD) measure does not square the distance from the average, so it is less affected by extreme \glspl{observation} than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
+@entry{fives,
+name = {5S},
+description = {TBD}
+}
+
+@entry{a3problemsolving,
+name = {A3 problem solving},
+description = {A \gls{continuousimprovement} approach, first employed at Toyota, and typically used by \gls{leanmanagement} practitioners.}
+}
+
+@entry{averageabsolutedeviation,
+name = {average absolute deviation (AAD)},
+description = {This measure does not square the distance from the \gls{averagestatistic}, so it is less affected by extreme \glspl{observation} than are the \gls{variance} and the \gls{standarddeviation}. $$\text{AAD} = \frac{\sum\limits_{i=1}^N\left(|Y_i - \overline{Y}|\right)}{N}$$}
 }
 
 @entry{abbreviation,
@@ -138,8 +148,8 @@ description = {It is the \gls{averagestatistic} of several \glspl{rangestatistic
 }
 
 @entry{averagestatistic,
-plural = {averages},
 name = {average},
+plural = {averages},
 description = {It is the sum of a set of values divided by the count of values. It is a type of \gls{locationstatistic}. $$\overline{Y} = \frac{\sum\limits_{i=1}^{n} X_i}{n}$$}
 }
 
@@ -147,6 +157,11 @@ description = {It is the sum of a set of values divided by the count of values. 
 name = {Beautiful Soup},
 description = {It parses HTML and XML documents to create a tree-like representation
 of the document structure and extract \glspl{datum}. \cite{beautifulsoup}}
+}
+
+@entry{bethatasitmay,
+name = {be that as it may},
+description = {Use \gls{plainenglish} \enquote{however.}}
 }
 
 @entry{betweenoperatorerror,
@@ -233,16 +248,31 @@ name = {brainstorming},
 description = {It is a technique for spontaneously generating ideas. It encourages creative thinking and new ideas. The goal is to generate as many ideas as possible without criticism of the ideas until the brainstorming exercise is complete.}
 }
 
+@entry{broketheinternet,
+name = {broke the internet},
+description = {It is a \gls{hyperbole} describing online conversations. It is difficult to prove that such an event happened. It is best to use something quantifiable instead of \gls{hyperbole}.}
+}
+
 @entry{buzzword,
 name = {buzzword},
 plural = {buzzwords},
 description = {It a fashionable word or technical phrase that becomes trendy in a specific field, often losing its original meaning through heavy overuse.}
 }
 
+@entry{compoundannualgrowthrate,
+name = {compound annual growth rate (CAGR)},
+description = {It is a business and investing specific term for the geometric progression ratio that provides a constant rate of return over the time period.}
+}
+
 @entry{cappuccino,
 name = {cappuccino},
 plural = {cappuccinos},
 description = {Cappuccino is \gls{espresso} coffee topped with frothed hot milk or cream and often flavored with cinnamon.}
+}
+
+@entry{changeseverything,
+name = {changes everything},
+description = {It means that a single event, discovery, or decision has a profound, total, and permanent impact on a situation. It implies that the existing rules, conditions, or ways of doing things are completely altered from that moment forward. Use \gls{plainenglish} \enquote{transforms the situation.}}
 }
 
 @entry{chisquaredistribution,
@@ -324,10 +354,15 @@ plural = {cunfusion matrices},
 description = {In the field of \gls{machinelearning}, it s a table that shows the performance of an algorithm, typically a supervised learning model. Each row of the matrix represents the instances in an actual class while each column represents the instances in a predicted class.}
 }
 
+@entry{continuousimprovement,
+name = {continuous improvement},
+description = {A set of tools focussed on \gls{losselimination}, including site loss analysis, priority setting, focussed-improvement process (\gls{sixsigma}), \gls{rootcauseanalysis}, \gls{equipmentreliability}, (\gls{globalefficiency}), and \gls{fives}.}
+}
+
 @entry{controlchart,
 plural = {control charts},
 name = {control chart},
-description = {It is a graphical plot used to determine if process variation is stable and predictable. A process that is in \gls{statisticalcontrol} means that the variation is due to \glspl{commoncause}. A process that is not in \gls{statisticalcontrol}, that is, out of control, means that the variation is due to \glspl{specialcause}.},
+description = {It is a graphical plot used to determine if process variation is stable and predictable. A process that is in \gls{statisticalcontrol} means that the variation is due to \glspl{commoncause}. A process that is not in \gls{statisticalcontrol}, that is, out of control, means that the variation is due to \glspl{specialcause}.}
 }
 
 @entry{controlchartlimit,
@@ -511,7 +546,7 @@ description = {A sample of values will not (usually) have all values identical. 
 @entry{dispersionstatistic,
 plural = {dispersion statistics},
 name = {dispersion statistic},
-description = {It is a statistic that estimates the spread or variability of the \glspl{datum}. It is also called a measure of scale. Examples include the variance, the \gls{standarddeviation}, the \gls{rangestatistic}, the \gls{aad}, the \gls{mad}, and the \gls{iqr}.}
+description = {It is a statistic that estimates the spread or variability of the \glspl{datum}. It is also called a measure of scale. Examples include the variance, the \gls{standarddeviation}, the \gls{rangestatistic}, the \gls{averageabsolutedeviation}, the \gls{mad}, and the \gls{iqr}.}
 }
 
 @entry{distancetonearestspecification,
@@ -600,6 +635,11 @@ description = {It is any procedure for conducting an investigation that relies u
 name = {endogenous variable},
 plural = {endogenous variables},
 description = {Endogenous variables are explained or predicted by a model. They are caused by factors within the system. Other names are y, dependent variable, regressand, outcome, response variable, and target (\gls{machinelearning}). In $y = mX + b$, y is the endogenous variable.}
+}
+
+@entry{equipmentreliability,
+name = {equipment reliability},
+description = {TBD}
 }
 
 @entry{espresso,
@@ -697,6 +737,11 @@ name = {GitLab},
 description = {It is a \gls{cloudcomputing} platform where you can store, share, and work together with others to write code.}
 }
 
+@entry{globalefficiency,
+name = {global efficiency},
+description = {TBD}
+}
+
 @entry{gui,
 name = {graphical user interface},
 plural = {graphical user interfaces},
@@ -706,6 +751,11 @@ description = {A graphical user interface (GUI) is a visual interface that allow
 @entry{handgeometry,
 name = {hand geometry},
 description = {TBD}
+}
+
+@entry{havingsaidthat,
+name = {having said that},
+description = {See \gls{thatsaid}.}
 }
 
 @entry{heartbeat,
@@ -734,6 +784,11 @@ description = {It describes a personality quality of extreme or excessive pride 
 name = {human language},
 plural = {human languages},
 description = {It is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which humans convey meaning, both in spoken and signed forms, and may also be conveyed through writing. Human language is characterized by its cultural and historical diversity, with significant variations observed between cultures and across time. Human languages possess the properties of productivity and displacement, which enable the creation of an infinite number of sentences, and the ability to refer to objects, events, and ideas that are not immediately present in the discourse. The use of human language relies on social convention and is acquired through learning.}
+}
+
+@entry{hyperbole,
+name = {hyperbole},
+description = {It is extravagant exaggeration.}
 }
 
 @entry{hypothesistest,
@@ -879,6 +934,26 @@ name = {LaTeX},
 description = {LaTex, pronounced \enquote{lay-tech,} is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software \cite{oetiker_serwin_partl_hyna_schlegl}.}
 }
 
+@entry{leanin,
+name = {lean in},
+description = {It is \gls{jargon}. Use \gls{plainenglish} \enquote{get involved.}}
+}
+
+@entry{leanmanagement,
+name = {lean management},
+description = {TBD}
+}
+
+@entry{letsdivein,
+name = {let's dive in},
+description = {Use \gls{plainenglish} \enquote{let's examine this.}}
+}
+
+@entry{letsunpackthis,
+name = {let's unpack this},
+description = {Use \gls{plainenglish} \enquote{let's examine this.}}
+}
+
 @entry{linearregression,
 name = {linear regression},
 plural = {linear regressions},
@@ -901,6 +976,16 @@ description = {It is a statistic that estimates the central value that best desc
 name = {logistic regression},
 plural = {logistic regressions},
 description = {In \gls{statistic}, the (binary) logistic model (or logit model) is a statistical model that models the probability of one event (out of two alternatives) taking place by having the log-odds (the logarithm of the odds) for the event be a linear combination of one or more independent variables (predictors). In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (the coefficients in the linear combination).}
+}
+
+@entry{longstoryshort,
+name = {long story short},
+description = {This is \gls{jargon}. Do not say this.}
+}
+
+@entry{losselimination,
+name = {loss elimination},
+description = {TBD}
 }
 
 @entry{machinelearning,
@@ -933,7 +1018,7 @@ description = {TBD}
 
 @entry{mad,
 name = {median absolute deviation},
-description = {The median absolute deviation (MAD) is a variation of the \gls{aad} that is even less affected by extremes in the tail because the \glspl{datum} in the tails have less influence on the calculation of the median than they do on the \gls{averagestatistic}. $$\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$$},
+description = {The median absolute deviation (MAD) is a variation of the \gls{averageabsolutedeviation} that is even less affected by extremes in the tail because the \glspl{datum} in the tails have less influence on the calculation of the median than they do on the \gls{averagestatistic}. $$\text{MAD} = \text{median}\left(|Y_i - \tilde{Y}|\right)$$},
 }
 
 @entry{mae,
@@ -1068,6 +1153,11 @@ name = {overfitting},
 description = {It is the production of an analysis that corresponds too closely or exactly to a particular set of \glspl{datum}, and may therefore fail to fit to additional \glspl{datum} or predict future \glspl{observation} reliably. An overfitted model is a mathematical model that contains more parameters than can be justified by the \glspl{datum}. The essence of overfitting is to have unknowingly extracted some of the residual variation (that is, the noise) as if that variation represented underlying model structure. The possibility of over-fitting exists because the criterion used for selecting the model is not the same as the criterion used to judge the suitability of a model. For example, a model might be selected by maximizing its performance on some set of \gls{trainingdataset}, and yet its suitability might be determined by its ability to perform well on unseen data; then over-fitting occurs when a model begins to \enquote{memorize} \gls{trainingdataset} rather than \enquote{learning} to generalize from a trend. As an extreme example, if the number of parameters is the same as or greater than the number of \glspl{observation}, then a model can perfectly predict the \gls{trainingdataset} simply by memorizing the \glspl{datum} in its entirety. Such a model, though, will typically fail severely when making predictions.}
 }
 
+@entry{ownthat,
+name = {own that},
+description = {It means to take full responsibility for your actions, mistakes, or qualities, often with a sense of confidence, honesty, or pride. Use \gls{plainenglish} \enquote{take responsibility.}}
+}
+
 @entry{packagemanager,
 name = {package manager},
 description = {A package manager is software that handles package installation, removal, and downgrades of software for the host system. (\href{https://en.wikipedia.org/wiki/Package_manager}{Package manager})}
@@ -1098,6 +1188,11 @@ description = {It is a \gls{processbehaviourchart} that plots the lines from the
 name = {parameter},
 plural = {parameters},
 description = {Parameters are the input variables bounded by parentheses when defining a Python function.}
+}
+
+@entry{pdca,
+name = {plan do check act (PDCA)},
+description = {See \gls{a3problemsolving}.}
 }
 
 @entry{phacking,
@@ -1294,6 +1389,11 @@ name = {reinforcement learning},
 description = {It is an area of \gls{machinelearning} concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward.}
 }
 
+@entry{reportout,
+name = {report out},
+description = {It means to present findings, updates, or a summary of a discussion to a larger group after a smaller group has finished meeting. Use \gls{plainenglish} \enquote{report.}}
+}
+
 @entry{requests,
 name = {Requests},
 description = {It  is a simple, yet elegant, HTTP library. Requests allows you to send HTTP/1.1 requests extremely easily. (\cite{requests})}
@@ -1329,10 +1429,20 @@ plural = {retinas},
 description = {The retina is the sensory membrane that lines the eye, is composed of several layers including one containing the rods and cones, and functions as the immediate instrument of vision by receiving the image formed by the lens and converting it into chemical and nervous signals which reach the brain by way of the optic nerve.}
 }
 
+@entry{rinseandrepeat,
+name = {rinse and repeat},
+description = {It means to perform a sequence of actions, or a process, over and over again in the exact same way. Use \gls{plainenglish} \enquote{repeat the process.}}
+}
+
 @entry{rmse,
 name = {root-mean-squared error},
 plural = {root-mean-squared errors},
 description = {The root-mean-squared error (RMSE) is a frequently-used measure of the differences between values predicted by a model or an estimator and the values observed. $$\text{RMSE} = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(y_i - \widehat{y}\right)^2}{n}}$$}
+}
+
+@entry{rootcauseanalysis,
+name = {root cause analysis (RCA)},
+description = {TBD}
 }
 
 @entry{rpa,
@@ -1406,7 +1516,7 @@ description = {This is a program that interprets the commands typed into a \gls{
 @entry{shellscript,
 name = {shell script},
 plural = {shell scripts},
-description = {A shell script is a plain text file of commands that is executed on a compute terminal, also known as a shell. Linux \cite{bash}, cite{zsh}, Mac \cite{zsh}, and Windows PowerShell \cite{spowershell} can easily execute shell scripts. Windows PowerShell offers similar functionality and has its own syntax for the commands.}
+description = {A shell script is a plain text file of commands that is executed on a compute terminal, also known as a shell. Linux \cite{bash}, cite{zsh}, Mac \cite{zsh}, and Windows PowerShell \cite{powershell} can easily execute shell scripts. Windows PowerShell offers similar functionality and has its own syntax for the commands.}
 }
 
 @entry{shewhartcontrolchart,
@@ -1419,6 +1529,11 @@ seealso={controlchart}
 @entry{sicario,
 name = {sicario},
 description = {A sicario is a hired gunman or assassin, especially in Latin America.}
+}
+
+@entry{sixsigma,
+name = {Six Sigma},
+description = {TBD}
 }
 
 @entry{software,
@@ -1500,6 +1615,11 @@ plural = {statistics},
 description = {TBD}
 }
 
+@entry{stayinyourlane,
+name = {stay in your lane},
+description = {It means to focus on your own responsibilities, duties, or area of expertise, and to avoid interfering in or commenting on matters that do not concern you. Use \gls{plainenglish} \enquote{keep out of it}i or \enquote{mind your own business.}}
+}
+
 @entry{stochasticparrot,
 name = {stochastic parrot},
 plural = {stochastic parrots},
@@ -1525,6 +1645,11 @@ description = {It is the \gls{machinelearning} task of learning a function that 
 @entry{svm,
 name = {support-vector machine},
 description = {A support-vector machine (SVM) is a supervised learning model with associated algorithms that analyze \glspl{datum} for classification and prediction.}
+}
+
+@entry{sweetspot,
+name = {sweet spot},
+description = {It means the optimum or ideal point where something operates with the greatest possible efficiency, effectiveness, or comfort. Use \gls{plainenglish} \enquote{the ideal point.}}
 }
 
 @entry{taguchilossfunction,
